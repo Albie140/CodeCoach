@@ -21,8 +21,10 @@ function SignUp() {
         <Input type="password" name="password" id="password" placeholder="password" />
       </FormGroup>
       <FormGroup>
-        <Label>Why do you want to learn coding?</Label>
-        <Input type="textarea" name="learnersummary" id="learnersummary">
+        <Label>Enter a role</Label>
+        <Input type="select" name="selectRole" id="selectRole">
+          <option>Learner</option>
+          <option>Teacher</option>
         </Input>
       </FormGroup>
       <Button className="submit">Sign Up!</Button>

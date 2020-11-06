@@ -12,7 +12,7 @@ import RegisterButtons from "./components/RegisterButtons";
 import ProgressBar from "./components/ProgressBar";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import SignUpGrader from "./components/SignUpGrader";
+
 
 function App() {
   // const [search, setSearch] = useState("");
@@ -44,7 +44,7 @@ function App() {
       <ProgressBar />
       <Login />
       <SignUp />
-      <SignUpGrader />
+    
       <Footer />
     </section>
   );

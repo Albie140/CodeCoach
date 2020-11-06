@@ -6,9 +6,9 @@ function RegisterButtons() {
 
     return (
         <Container fluid={true}>
-            <Button className="Btn learnBtn" color="primary">CLICK HERE TO BE A LEARNER</Button>
+            <Button className="Btn learnBtn" color="warning">CLICK HERE TO SIGN IN</Button>
             {' '}
-            <Button className="Btn gradeBtn" color="primary">CLICK HERE TO BE A GRADER</Button>
+            <Button className="Btn gradeBtn" color="primary">CLICK HERE TO BE A MEMBER</Button>
         </Container>
     )
 }
