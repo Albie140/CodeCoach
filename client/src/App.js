@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Add from "./pages/AddHooks";
 import Edit from "./pages/Edit";
 
+import ProgressBar from "./components/ProgressBar";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/edit/:id" component={Edit} />
         </Main>
       </Router>
+      <ProgressBar />
       <Login />
       <SignUp />
       <Footer />

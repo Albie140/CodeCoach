@@ -23,7 +23,7 @@ function SignUp() {
       <FormGroup>
         <Label>Select a role:</Label>
         <Input type="select" name="select" id="exampleSelect">
-          <option>Coder</option>
+          <option>Learner</option>
           <option>Grader</option>
         </Input>
       </FormGroup>
