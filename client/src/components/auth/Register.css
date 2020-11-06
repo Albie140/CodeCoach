@@ -1,0 +1,13 @@
+.signUpBox {
+    padding: 20px;
+    margin: 30px;
+    background-color: #e5d02e;
+    color: #e06161;
+    width: 300px;
+    border-radius: 10px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.txtLogIn {
+    font-size: 15px;
+}
