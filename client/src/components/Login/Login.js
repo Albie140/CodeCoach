@@ -6,7 +6,8 @@ import './Login.css';
 function Login() {
 	return (
 	<div className="loginBox">
-		<h2>Coding Coach</h2>
+    <h4>Sign In to </h4>
+		<h1>Coding Coach!</h1>
 		<hr />
 	<Form>
       <FormGroup>
@@ -24,7 +25,7 @@ function Login() {
           <option>Grader</option>
         </Input>
       </FormGroup>
-      <Button>Log In!</Button>
+      <Button>Log In</Button>
 	  </Form>
 	  </div>
 	);

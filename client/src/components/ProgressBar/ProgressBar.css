@@ -1,5 +1,5 @@
 .progressbar {
-    height: 30px;
-    border: solid 3px #e4d02e;
-    border-radius: 10px;
+    height: 30px !important;
+    border: solid 3px #e4d02e !important;
+    border-radius: 10px !important;
 }
