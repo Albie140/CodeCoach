@@ -1,33 +1,31 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Button, Container } from 'reactstrap';
+import { Button, Container, Jumbotron } from 'reactstrap';
 import './Landing.css';
 
 class Landing extends Component {
   render() {
     return (
-      <div className="container valign-wrapper">
-        <div className="row">
-          <div className="col s12 center-align">
-              <h1>Code Coach!</h1> 
-              <h4>learners and coders alike. Come see it for yourself!
-            </h4>
-            <br />
-            <div className="col s6">
-            <Link to="/register">
-              <Button className="Btn" color="warning">
-                  Register
+      <Container fluid={true}>
+
+        <Jumbotron className="jumboBanner">
+          <h1>Code Coach!</h1>
+          <h4>learners and coders alike. Come see it for yourself!</h4>
+          <hr />
+        </Jumbotron>
+
+        <Container className="toRouteBtns mx-auto">
+          <Link to="/register">
+            <Button className="registerBtn" color="warning">
+              Register
              </Button></Link>
-            </div>
-            <div className="col s6">
-                <Link to="/login">
-                  <Button className="Btn" color="primary">
-                  Log In</Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
+          {' '}
+          <Link to="/login">
+            <Button className="logInBtn" color="primary">
+              Log In</Button></Link>
+        </Container>
+
+      </Container>
     );
   }
 }

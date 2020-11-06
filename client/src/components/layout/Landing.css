@@ -1,4 +1,4 @@
-.btn {
+.logInBtn, .registerBtn {
     background-color: #e4d02e !important;
     width: 160px !important;
     height: 120px !important;
@@ -8,4 +8,18 @@
     border: none !important;
     font-family: 'Bubblegum Sans', cursive;
     color: #6b77e1 !important;
+}
+
+
+.jumboBanner {
+    margin-top: 5px !important;
+    background-color: #6b77e1 !important;
+    color: #e4d02e !important;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+
+.toRouteBtns {
+    padding: 10px;
+    
 }
