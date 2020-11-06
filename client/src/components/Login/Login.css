@@ -1,0 +1,9 @@
+.loginBox {
+    padding: 50px;
+    margin: 30px;
+    background-color: #769eda;
+    color: #e4d02e;
+    width: 350px;
+    border-radius: 10px;
+    font-family: 'Bubblegum Sans', cursive;
+}
