@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
-import { Form, Label, Input, Button } from 'reactstrap';
+import { Label, Input, Button } from 'reactstrap';
 import './Register.css';
 
 class Register extends Component {
