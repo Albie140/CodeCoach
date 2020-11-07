@@ -1,6 +1,8 @@
 import React from "react";
 import { Jumbotron } from 'reactstrap';
 import './Header.css';
+import Nav from "./Nav"
+
 
 function Header(props) {
 	return (
@@ -12,6 +14,7 @@ function Header(props) {
 				<p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
 			</Jumbotron>
 			{props.children}
+			<Nav />
 		</header>
 	);
 }

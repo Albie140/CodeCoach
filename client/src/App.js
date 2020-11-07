@@ -14,6 +14,10 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import LearnerAssignment from "./pages/LearnerAssignment";
+import LearnerTimeline from "./pages/LearnerTimeline";
+import Nav from "./components/Nav/Nav"
+
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -38,6 +42,7 @@ class App extends Component {
   render() {
     return (
       <Provider store={store}>
+       <Nav />
         <Router>
           <div className="App">
         
@@ -46,6 +51,8 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/Assignment" component={LearnerAssignment} />
+              <PrivateRoute exact path="/Timeline" component={LearnerTimeline} />
             </Switch>
           </div>
         </Router>
