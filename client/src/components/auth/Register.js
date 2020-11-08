@@ -64,7 +64,7 @@ class Register extends Component {
             </Link>
             <div className="col s12" style={{ paddingLeft: "10px", paddingTop: "10px" }}>
               <h4>
-                <b>Register</b> below
+                Register for an account 
               </h4>
               <p className="txtLogIn"> Already have an account? <Link to="/login">Log in</Link>
               </p>
@@ -134,7 +134,7 @@ class Register extends Component {
                     <option>Teacher</option>
                   </Input>
               
-                <div className="col s12" style={{ paddingLeft: "11.250px" }}>
+                <div className="col s12" style={{ paddingLeft: "11.250px", marginTop: "10px" }}>
                   <Button
                     type="submit"
                     className="btn btn-large waves-effect waves-light hoverable blue accent-3">

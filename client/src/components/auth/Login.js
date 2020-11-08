@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Input, Button } from 'reactstrap';
 import './Login.css';
 
 class Login extends Component {

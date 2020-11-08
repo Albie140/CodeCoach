@@ -1,13 +1,14 @@
 .logInBtn, .registerBtn {
-    background-color: #e4d02e !important;
+    background-color: #e06161 !important;
     width: 160px !important;
     height: 120px !important;
     margin: 10px 30px !important;
     padding: 20px !important;
     border-radius: 10px !important;
-    border: none !important;
+    border: solid 1px #e4d02e !important;
     font-family: 'Bubblegum Sans', cursive;
-    color: #6b77e1 !important;
+    color: #e4d02e !important;
+    font-size: 30px !important;
 }
 
 
@@ -16,10 +17,10 @@
     background-color: #6b77e1 !important;
     color: #e4d02e !important;
     font-family: 'Bubblegum Sans', cursive;
+    border: double 8px #af1313 !important;
 }
 
 
 .toRouteBtns {
     padding: 10px;
-    
 }
