@@ -1,16 +1,15 @@
-import React, { Component } from "react";
-import Dashboard from "../components/dashboard/Dashboard";
+import React from "react";
 
 
-class LearnerDashboard extends Component {
-  render() {
+
+function LearnerDashboard() {
     return (
       <div>
-        <Dashboard />
+        Testing
           
       </div>
     );
   }
-  }
+  
   
   export default LearnerDashboard;

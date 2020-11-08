@@ -1,26 +1,47 @@
-.graderDashBox {
+.graderPageBox {
+    padding: 5px;
+    margin: 5px;
+}
+
+.graderh1 {
     background-color: #6b77e1;
     border: 1px solid black;
-    display:flex;
-    /* justify-content: center; */
-    text-align: left;
+    text-align: center;
     width: 80%;
     margin: 0 auto;
     border-radius: 10px;
     padding: 20px;
     color: #e3d02e;
-
 }
 
 .graderMiniBox {
     background-color: #e06161;
-    border: 1px solid black;
-    display:flex;
-    align-content: center;
-    justify-content: center;
+    border: 1px solid white;
     width: 60%;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
-    padding: 30px;
+    padding: 20px;
 }
+
+.graderListBox {
+    margin-top: 15px;
+    background-color: transparent !important;
+}
+
+.gListh1 {
+    color: #769eda;
+}
+
+.gradeBtnBox {
+    text-align: end;
+    background-color: transparent !important;
+}
+
+.gradeThisBtn {
+    background-color: #af1313 !important;
+    color: #e4d02e !important;
+    width: 200px;
+}
+
+

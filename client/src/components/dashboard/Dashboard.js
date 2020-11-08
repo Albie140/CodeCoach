@@ -4,6 +4,9 @@ import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import Navbar from "../Navbar";
 
+import GraderPage from "../GraderPage"
+import LearnerPage from "../LearnerPage"
+
 class Dashboard extends Component {
   onLogoutClick = e => {
     e.preventDefault();
@@ -15,35 +18,32 @@ class Dashboard extends Component {
 
     return (
       <>
-      
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
-          <div className="landing-copy col s12 center-align">
+        <div className="container-fluid">
 
           <Navbar />
 
-            <h4>
-              <b>Hey there,</b> {user.name.split(" ")[0]}
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
-              </p>
-            </h4>
-            <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem"
-              }}
-              onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
-              Logout
+          {/* Use this to pick up name of logged in user */}
+          {/* <h4>
+            <b>Hey there,</b> {user.name.split(" ")[0]}
+          </h4> */}
+
+
+
+
+          {/* <GraderPage
+            name={user.name.split(" ")[0]}
+          /> */}
+
+          <LearnerPage
+            name={user.name.split(" ")[0]}
+          />
+
+          <button className="btn btn-primary LogoutBtn"
+            onClick={this.onLogoutClick}>
+            Logout
             </button>
-          </div>
+
         </div>
-      </div>
       </>
     );
   }

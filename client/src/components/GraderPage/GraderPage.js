@@ -1,18 +1,21 @@
 import React from 'react';
-import './Grader.css'
+import './Grader.css';
+import GraderList from './components/graderList'
 
-function GraderPage() {
+function GraderPage(props) {
     return (
         <div>
-        <div className="font"> 
-        <h1 className="graderDashBox">
-           WELCOME GRADER! <i class="far fa-smile fa-fw"></i>
+        <div className="container-fluid font graderPageBox"> 
+        <h1 className="graderh1">
+        👋 Hello there, {props.name}! 
         </h1>
         <div className="graderMiniBox">
         Thank you for helping others learn how to code! Below is a list of some code newbies who need your help! Please be thorough and as informative and helpful with your comments as you can be!
         </div>
+
+        <GraderList />
       </div>
-  
+      
       </div>
     );
   }
