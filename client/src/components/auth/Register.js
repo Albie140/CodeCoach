@@ -71,6 +71,7 @@ class Register extends Component {
             </div>
           
               <form noValidate onSubmit={this.onSubmit}>
+
                 <div className="input-field col s12">
                   <Input
                     onChange={this.onChange}
@@ -83,8 +84,9 @@ class Register extends Component {
                     })}
                   />
                   <label htmlFor="name"> Name</label>
-                  <span className="red-text">{errors.name}</span>
+                  <span className="red-text"> {errors.name}</span>
                 </div>
+
                 <div className="input-field col s12">
                   <Input
                     onChange={this.onChange}
@@ -97,8 +99,9 @@ class Register extends Component {
                     })}
                   />
                   <label htmlFor="email"> Email</label>
-                  <span className="red-text">{errors.email}</span>
+                  <span className="red-text"> {errors.email}</span>
                 </div>
+
                 <div className="input-field col s12">
                   <Input
                     onChange={this.onChange}
@@ -111,8 +114,9 @@ class Register extends Component {
                     })}
                   />
                   <label htmlFor="password"> Password</label>
-                  <span className="red-text">{errors.password}</span>
+                  <span className="red-text"> {errors.password}</span>
                 </div>
+
                 <div className="input-field col s12">
                   <Input
                     onChange={this.onChange}
@@ -127,20 +131,29 @@ class Register extends Component {
                   <label htmlFor="password2"> Confirm Password</label>
                   <span className="red-text">{errors.password2}</span>
                 </div>
-              
+                    
+                <div className="input-field col s12" style={{marginTop: "10px"}}>
                   <Label>Enter a role</Label>
-                  <Input type="select" name="role" id="role" value={this.state.role} onChange={this.onChange} error="">
+                  <Input 
+                    type="select" 
+                    name="role" 
+                    id="role" 
+                    value={this.state.role} 
+                    onChange={this.onChange} 
+                    error="">
                     <option>Learner</option>
                     <option>Teacher</option>
                   </Input>
+                  </div>
               
                 <div className="col s12" style={{ paddingLeft: "11.250px", marginTop: "10px" }}>
                   <Button
                     type="submit"
-                    className="btn btn-large waves-effect waves-light hoverable blue accent-3">
+                    className="btn">
                     Sign up
                 </Button>
                 </div>
+
               </form>
          
 

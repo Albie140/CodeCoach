@@ -2,13 +2,20 @@
     background-color: #e06161 !important;
     width: 160px !important;
     height: 120px !important;
-    margin: 10px 30px !important;
+    margin: 10px 50px !important;
     padding: 20px !important;
     border-radius: 10px !important;
     border: solid 1px #e4d02e !important;
     font-family: 'Bubblegum Sans', cursive;
     color: #e4d02e !important;
     font-size: 30px !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) !important;
+    transition: 0.3s !important;
+}
+
+.logInBtn:hover, .registerBtn:hover {
+    background-color: #e4d02e !important;
+    color: white !important;
 }
 
 
@@ -18,9 +25,17 @@
     color: #e4d02e !important;
     font-family: 'Bubblegum Sans', cursive;
     border: double 8px #af1313 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 
 .toRouteBtns {
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.h5style {
+    padding-left: 20px;
 }

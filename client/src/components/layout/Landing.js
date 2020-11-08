@@ -11,13 +11,13 @@ class Landing extends Component {
 
         <Jumbotron className="jumboBanner">
           <h1><i className="fas fa-laptop-code"></i> CodeCoach!</h1>
-          <h5 style={{paddingLeft: "20px"}}>A place for learners and coders alike. 
+          <h5 className="h5style">A place for learners and coders alike. 
             <br />
             Come see it for yourself!</h5>
           <hr />
         </Jumbotron>
 
-        <Container className="toRouteBtns mx-auto">
+        <Container className="toRouteBtns">
           <Link to="/register">
             <Button className="registerBtn" color="warning">
               Register

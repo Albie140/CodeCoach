@@ -1,0 +1,26 @@
+.graderDashBox {
+    background-color: #6b77e1;
+    border: 1px solid black;
+    display:flex;
+    /* justify-content: center; */
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    color: #e3d02e;
+
+}
+
+.graderMiniBox {
+    background-color: #e06161;
+    border: 1px solid black;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 30px;
+}

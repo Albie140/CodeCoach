@@ -7,6 +7,8 @@ import classnames from "classnames";
 import { Input, Button } from 'reactstrap';
 import './Login.css';
 
+import GraderPage from "../GraderPage"
+
 class Login extends Component {
   constructor() {
     super();
@@ -55,6 +57,7 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
+      <>
       <div className="loginBox mx-auto">
         <div style={{ marginTop: "10px" }} className="row">
           <div className="col s8 offset-s2">
@@ -118,6 +121,9 @@ class Login extends Component {
           </div>
         </div>
       </div>
+
+      {/* <GraderPage /> */}
+      </>
     );
   }
 }
