@@ -6,7 +6,6 @@ import './ProgressBar.css';
 function ProgressBar() {
 	return (
         <>
-        <h2 className="font">Progress Bar: </h2>
         <Progress multi className="progressbar">
         <Progress bar value="15" />
         <Progress bar color="success" value="18" />

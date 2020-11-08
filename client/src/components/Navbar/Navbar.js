@@ -6,8 +6,18 @@ import { logoutUser } from "../../actions/authActions";
 import "./Navbar.css";
 
 class Dashboard extends Component {
-  state = {
-    collapsed: true,
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      isOpen: false
+    };
+  }
+  toggle() {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
   }
 
   onLogoutClick = e => {
@@ -15,22 +25,15 @@ class Dashboard extends Component {
     this.props.logoutUser();
   };
 
-  toggleNavbar = event => {
-
-    this.setState({
-      collapsed: false
-    })
-  }
-
   render() {
     const { user } = this.props.auth;
 
     return (
       <div>
-        <Navbar color="faded" light>
-          <NavbarToggler onClick={this.toggleNavbar} className="mr-2" />
-          <Collapse isOpen={this.collapsed} navbar>
-            <Nav navbar className="navbardiv">
+        <Navbar className="sticky-top" color="faded" light expand="lg">
+          <NavbarToggler onClick={this.toggle} className="mr-2" />
+          <Collapse isOpen={this.state.isOpen} navbar>
+            <Nav navbar className="ml-auto">
               <NavItem>
                 <NavLink href="#">GraderDashboard</NavLink>
               </NavItem>
@@ -56,17 +59,16 @@ class Dashboard extends Component {
     );
   }
 }
-
-Dashboard.propTypes = {
-  logoutUser: PropTypes.func.isRequired,
-  auth: PropTypes.object.isRequired
-};
-
 NavbarToggler.propTypes = {
   type: PropTypes.string,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
   // pass in custom element to use
 }
+
+Dashboard.propTypes = {
+  logoutUser: PropTypes.func.isRequired,
+  auth: PropTypes.object.isRequired
+};
 
 const mapStateToProps = state => ({
   auth: state.auth
