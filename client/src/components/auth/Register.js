@@ -15,7 +15,7 @@ class Register extends Component {
       email: "",
       password: "",
       password2: "",
-      role: "",
+      role: "Learner",
       errors: {}
     };
   }
@@ -66,7 +66,7 @@ class Register extends Component {
               <h4>
                 Register for an account 
               </h4>
-              <p className="txtLogIn"> Already have an account? <Link to="/login">Log in</Link>
+              <p> Already have an account? <Link to="/login">Log in</Link>
               </p>
             </div>
           

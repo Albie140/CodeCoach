@@ -1,5 +1,4 @@
 import React from "react";
-import './Grader.css'
 
 class GraderDashboard extends Component {
   render() {

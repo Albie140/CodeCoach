@@ -7,7 +7,7 @@ import classnames from "classnames";
 import { Input, Button } from 'reactstrap';
 import './Login.css';
 
-import GraderPage from "../GraderPage"
+
 
 class Login extends Component {
   constructor() {
@@ -122,7 +122,6 @@ class Login extends Component {
         </div>
       </div>
 
-      {/* <GraderPage /> */}
       </>
     );
   }

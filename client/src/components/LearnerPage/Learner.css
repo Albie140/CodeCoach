@@ -1,0 +1,31 @@
+.LearnerProgBar {
+    width: 70%;
+    margin-top: 10px;
+}
+
+.lessonCard {
+    margin: 5px;
+    background-color: #dcc5c5 !important; 
+}
+
+.learnerAssignBox {
+    background-color: #769eda;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: dotted 2px white;
+
+}
+
+.gradedHeader {
+    margin-top: 10px;
+}
+
+.lessonBtn {
+    background-color: #e4d02e !important;
+    color: black !important;
+}
+
+.assignComment {
+    margin-left: 20px;
+}
