@@ -4,8 +4,10 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Input, Button } from 'reactstrap';
 import './Login.css';
+
+import GraderPage from "../GraderPage"
 
 class Login extends Component {
   constructor() {
@@ -55,6 +57,7 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
+      <>
       <div className="loginBox mx-auto">
         <div style={{ marginTop: "10px" }} className="row">
           <div className="col s8 offset-s2">
@@ -118,6 +121,9 @@ class Login extends Component {
           </div>
         </div>
       </div>
+
+      {/* <GraderPage /> */}
+      </>
     );
   }
 }

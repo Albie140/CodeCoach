@@ -3,18 +3,21 @@ import { Link } from "react-router-dom";
 import { Button, Container, Jumbotron } from 'reactstrap';
 import './Landing.css';
 
+
 class Landing extends Component {
   render() {
     return (
       <Container fluid={true}>
 
         <Jumbotron className="jumboBanner">
-          <h1>Code Coach!</h1>
-          <h4>learners and coders alike. Come see it for yourself!</h4>
+          <h1><i className="fas fa-laptop-code"></i> CodeCoach!</h1>
+          <h5 className="h5style">A place for learners and coders alike. 
+            <br />
+            Come see it for yourself!</h5>
           <hr />
         </Jumbotron>
 
-        <Container className="toRouteBtns mx-auto">
+        <Container className="toRouteBtns">
           <Link to="/register">
             <Button className="registerBtn" color="warning">
               Register
