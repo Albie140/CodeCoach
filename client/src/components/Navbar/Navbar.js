@@ -70,25 +70,8 @@ class Dashboard extends Component {
             <Nav navbar className="ml-auto">
 
               {navToDisplay}
-
               <NavItem>
-// <<<<<<< pageUpdates
-//                 <NavLink href="/gdashboard">GraderDashboard</NavLink>
-//               </NavItem>
-//               <NavItem>
-//                 <NavLink href="/ldashboard">LearnerDashboard</NavLink>
-//               </NavItem>
-//               <NavItem>
-//                 <NavLink href="/lassignments">LearnerAssignments</NavLink>
-//               </NavItem>
-//               <NavItem>
-//                 <NavLink href="/ltimeline">LearnerTimeline</NavLink>
-//               </NavItem>
-//               <NavItem>
-//                 <button className="btn btn-primary LogoutBtn"
-// =======
-//                 <button className="btn btn-primary"
-// >>>>>>> main
+                <button className="btn btn-primary"
                   onClick={this.onLogoutClick}>
                   Logout
                 </button>
@@ -101,6 +84,7 @@ class Dashboard extends Component {
     );
   }
 }
+
 NavbarToggler.propTypes = {
   type: PropTypes.string,
   tag: PropTypes.oneOfType([PropTypes.func, PropTypes.string])
