@@ -1,12 +1,12 @@
-import React from "react";
+// import React from "react";
 
-function LearnerAssignment() {
-    return (
-      <div>
-        <h1>Test</h1>
+// function LearnerAssignment() {
+//     return (
+//       <div>
+//         <h1>Test</h1>
           
-      </div>
-    );
-  }
+//       </div>
+//     );
+//   }
   
-  export default LearnerAssignment;
+//   export default LearnerAssignment;

@@ -72,7 +72,23 @@ class Dashboard extends Component {
               {navToDisplay}
 
               <NavItem>
-                <button className="btn btn-primary"
+// <<<<<<< pageUpdates
+//                 <NavLink href="/gdashboard">GraderDashboard</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="/ldashboard">LearnerDashboard</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="/lassignments">LearnerAssignments</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <NavLink href="/ltimeline">LearnerTimeline</NavLink>
+//               </NavItem>
+//               <NavItem>
+//                 <button className="btn btn-primary LogoutBtn"
+// =======
+//                 <button className="btn btn-primary"
+// >>>>>>> main
                   onClick={this.onLogoutClick}>
                   Logout
                 </button>
