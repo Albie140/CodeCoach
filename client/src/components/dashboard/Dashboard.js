@@ -15,6 +15,23 @@ class Dashboard extends Component {
 
   render() {
     const { user } = this.props.auth;
+    
+    const isLearnerRole = user.role
+    // console.log(`@@@@@@@@@@@@@`)
+    // console.log(this.props)
+    let pagetoLoad;
+
+    if (isLearnerRole === "Learner") {
+      pagetoLoad = <LearnerPage
+                    id={user.id}
+                    name={user.name.split(" ")[0]}
+                />
+    } else {
+      pagetoLoad = <GraderPage
+                    id={user.id}
+                    name={user.name.split(" ")[0]}
+                 />
+    }
 
     return (
       <>
@@ -22,26 +39,7 @@ class Dashboard extends Component {
 
           <Navbar />
 
-          {/* Use this to pick up name of logged in user */}
-          {/* <h4>
-            <b>Hey there,</b> {user.name.split(" ")[0]}
-          </h4> */}
-
-
-
-
-          {/* <GraderPage
-            name={user.name.split(" ")[0]}
-          /> */}
-
-          <LearnerPage
-            name={user.name.split(" ")[0]}
-          />
-
-          <button className="btn btn-primary LogoutBtn"
-            onClick={this.onLogoutClick}>
-            Logout
-            </button>
+          {pagetoLoad}
 
         </div>
       </>

@@ -13,20 +13,17 @@ function GraderList() {
             <h1 className="gListh1">Codes to Grade:</h1>
             <ListGroup>
                 {/* THIS NEEDS TO BE MAP OF THE THINGS TO GRADE THIS IS JUST A MOCK OF A LOOP */}
-                
-            <ListGroupItem>
-                <GraderCard />
-            </ListGroupItem>
-            <ListGroupItem>
-                <GraderCard />
-            </ListGroupItem>
-            <ListGroupItem>
-                <GraderCard />
-            </ListGroupItem>
+                <ListGroupItem className="gradeListItem">
+                    <GraderCard />
+                </ListGroupItem>
+
+                <ListGroupItem className="gradeListItem">
+                    <GraderCard />
+                </ListGroupItem>
 
             </ListGroup>
         </div>
-        );
-    }
-  
-    export default GraderList;
+    );
+}
+
+export default GraderList;

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem } from 'reactstrap';
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
@@ -25,8 +25,42 @@ class Dashboard extends Component {
     this.props.logoutUser();
   };
 
+
   render() {
     const { user } = this.props.auth;
+
+    const isLearnerRole = user.role
+    // console.log(`@@@@@@@@@@@@@`)
+    // console.log(this.props)
+    let navToDisplay;
+
+    if (isLearnerRole === "Learner") {
+      navToDisplay =
+        <>
+          <NavItem>
+            <a href="/dashboard"><button className="btn btn-primary">Learner Dashboard</button></a>
+          </NavItem>
+
+          <NavItem>
+            <a href="/assignments"><button className="btn btn-primary">Learner Assignment</button></a>
+          </NavItem>
+
+          <NavItem>
+            <a href="/timeline"><button className="btn btn-primary">Learner Timeline</button></a>
+          </NavItem>
+        </>
+    } else {
+      navToDisplay =
+        <>
+          <NavItem>
+            <a href="/dashboard"><button className="btn btn-primary">Grader Dashboard</button></a>
+          </NavItem>
+
+          <NavItem>
+            <a href="/savedtograde"> <button className="btn btn-primary">Saved to Grade</button></a>
+          </NavItem>
+        </>
+    }
 
     return (
       <div>
@@ -34,24 +68,16 @@ class Dashboard extends Component {
           <NavbarToggler onClick={this.toggle} className="mr-2" />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="ml-auto">
+
+              {navToDisplay}
+
               <NavItem>
-                <NavLink href="#">GraderDashboard</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">LearnerDashboard</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">LearnerAssignments</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="#">LearnerTimeline</NavLink>
-              </NavItem>
-              <NavItem>
-                <button className="btn btn-primary LogoutBtn"
+                <button className="btn btn-primary"
                   onClick={this.onLogoutClick}>
                   Logout
-            </button>
+                </button>
               </NavItem>
+
             </Nav>
           </Collapse>
         </Navbar>
