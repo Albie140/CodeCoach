@@ -2,7 +2,6 @@ const db = require("../models");
 
 module.exports = {
     findAll: (req, res) => {
-        console.log("asfhadfhahe4r");
         db.User
             .find({})
             .then(postData => {

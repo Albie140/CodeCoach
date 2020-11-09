@@ -7,10 +7,6 @@ router.route("/")
     .get(userController.findAll)
     .post(userController.create);
 
-// router.get("/", (req, res) => {
-//     console.log("Does this work?");
-// });
-
 // /api/users/:id routes only
 router.route("/:id")
     .get(userController.findById)
