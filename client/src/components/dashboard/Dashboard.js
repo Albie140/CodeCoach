@@ -17,8 +17,8 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
     
     const isLearnerRole = user.role
-    console.log(`@@@@@@@@@@@@@`)
-    console.log(this.props)
+    // console.log(`@@@@@@@@@@@@@`)
+    // console.log(this.props)
     let pagetoLoad;
 
     if (isLearnerRole === "Learner") {

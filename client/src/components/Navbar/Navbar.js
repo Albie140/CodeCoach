@@ -25,7 +25,43 @@ class Dashboard extends Component {
     this.props.logoutUser();
   };
 
+
   render() {
+    const { user } = this.props.auth;
+
+    const isLearnerRole = user.role
+    // console.log(`@@@@@@@@@@@@@`)
+    // console.log(this.props)
+    let navToDisplay;
+
+    if (isLearnerRole === "Learner") {
+      navToDisplay =
+        <>
+          <NavItem>
+            <a href="/dashboard"><button className="btn btn-primary">Learner Dashboard</button></a>
+          </NavItem>
+
+          <NavItem>
+            <a href="/assignments"><button className="btn btn-primary">Learner Assignment</button></a>
+          </NavItem>
+
+          <NavItem>
+            <a href="/timeline"><button className="btn btn-primary">Learner Timeline</button></a>
+          </NavItem>
+        </>
+    } else {
+      navToDisplay =
+        <>
+          <NavItem>
+            <a href="/dashboard"><button className="btn btn-primary">Grader Dashboard</button></a>
+          </NavItem>
+
+          <NavItem>
+            <a href="/savedtograde"> <button className="btn btn-primary">Saved to Grade</button></a>
+          </NavItem>
+        </>
+    }
+
     return (
       <div>
         <Navbar className="sticky-top" color="faded" light expand="lg">
@@ -33,25 +69,7 @@ class Dashboard extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="ml-auto">
 
-              <NavItem>
-                <a href="/dashboard"><button className="btn btn-primary">Learner Dashboard</button></a>
-              </NavItem>
-
-              <NavItem>
-                <a href="/assignment"><button className="btn btn-primary">Learner Assignment</button></a>
-              </NavItem>
-
-              <NavItem>
-                <a href="/timeline"><button className="btn btn-primary">Learner Timeline</button></a>
-              </NavItem>
-
-              <NavItem>
-                <a href="/dashboard"><button className="btn btn-primary">Grader Dashboard</button></a>
-              </NavItem>
-
-              <NavItem>
-                <a href="/savedtograde"> <button className="btn btn-primary">Saved to Grade</button></a>
-              </NavItem>
+              {navToDisplay}
 
               <NavItem>
                 <button className="btn btn-primary"

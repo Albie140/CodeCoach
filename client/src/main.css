@@ -6,6 +6,19 @@ body {
     background-color: rgb(228, 222, 160);
     background-image: url('http://stripedbgs.com/create76444b3.png?c1=af1313&c2=e06161&c3=769eda&c4=6b77e1&c5=e4d02e&res=800x480');
 }
+  
+  /* Scrollbar styling */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #e06161;
+    border-radius: 20px;
+    border: 2px solid transparent;
+  }
 
 
 /* Set up for mobile responsive-ness */
