@@ -68,7 +68,7 @@ class Login extends Component {
               <h3>
                 Login below
               </h3>
-              <p>
+              <p className="logInptag">
                 Don't have an account? 
                 <Link to="/register" className="register"> Register</Link>
               </p>
@@ -113,7 +113,7 @@ class Login extends Component {
                   {errors.passwordincorrect}
                 </span>
               </div>
-              <div className="col s12" style={{ paddingLeft: "11.250px", paddingTop: "10px" }}>
+              <div className="col s12 logInbuttonDiv">
                 <Button className="btn loginBtn" type="submit">
                   Login
                 </Button>

@@ -33,7 +33,8 @@ function LearnerPage(props) {
         <h2 className="font">Lessons: </h2>
         <Row>
         {lessons.map(data =>
-        <LearnerLessonplan 
+        <LearnerLessonplan
+          key={data.id}
           id={data.id}
           name={data.name}
           description={data.description}

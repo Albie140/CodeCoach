@@ -37,26 +37,26 @@ class Dashboard extends Component {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/ldashboard"><button className="navbtn btn-primary">Learner Dashboard</button></a>
+            <a href="/ldashboard"><button className="navbtn">Learner Dashboard</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/lassignments"><button className="navbtn btn-primary">Learner Assignment</button></a>
+            <a href="/lassignments"><button className="navbtn">Learner Assignment</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/ltimeline"><button className="navbtn btn-primary">Learner Timeline</button></a>
+            <a href="/ltimeline"><button className="navbtn">Learner Timeline</button></a>
           </NavItem>
         </>
     } else {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/gdashboard"><button className="navbtn btn-primary">Grader Dashboard</button></a>
+            <a href="/gdashboard"><button className="navbtn">Grader Dashboard</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/savedtograde"> <button className="navbtn btn-primary">Saved to Grade</button></a>
+            <a href="/savedtograde"> <button className="navbtn">Saved to Grade</button></a>
           </NavItem>
         </>
     }
@@ -70,7 +70,7 @@ class Dashboard extends Component {
 
               {navToDisplay}
               <NavItem>
-                <button className="navbtn btn-primary"
+                <button className="navbtn"
                   onClick={this.onLogoutClick}>
                   Logout
                 </button>

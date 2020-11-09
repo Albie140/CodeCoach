@@ -10,10 +10,14 @@ class Landing extends Component {
       <Container fluid={true}>
 
         <Jumbotron className="jumboBanner">
-          <h1><i className="fas fa-laptop-code"></i> CodeCoach!</h1>
-          <h5 className="h5style">A place for learners and coders alike. 
+          <h1>
+            <i className="fas fa-laptop-code"></i> CodeCoach!
+          </h1>
+          <h5 className="h5style">
+            A place for learners and coders alike. 
             <br />
-            Come see it for yourself!</h5>
+            Come see it for yourself!
+          </h5>
           <hr />
         </Jumbotron>
 
