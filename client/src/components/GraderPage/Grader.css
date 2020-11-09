@@ -25,23 +25,36 @@
 }
 
 .graderListBox {
-    margin-top: 15px;
-    background-color: transparent !important;
-}
-
-.gListh1 {
-    color: #769eda;
-}
-
-.gradeBtnBox {
-    text-align: end;
-    background-color: transparent !important;
+    margin-top: 25px;
 }
 
 .gradeThisBtn {
     background-color: #af1313 !important;
     color: #e4d02e !important;
     width: 200px;
+    float: right;
+}
+
+.gradeListItem {
+    background-color: transparent !important;
+    margin: 5px;
+    border: none;
+}
+
+.gradeCardBody {
+    background-color:#af1313 !important;
+}
+
+a {
+    color: #e4d02e !important;
+}
+
+.gradeCardHead {
+    background-color:#769eda !important;
+}
+
+.gradeCardFoot {
+    background-color:#769eda !important
 }
 
 

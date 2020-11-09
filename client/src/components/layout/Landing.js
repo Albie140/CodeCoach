@@ -19,13 +19,14 @@ class Landing extends Component {
 
         <Container className="toRouteBtns">
           <Link to="/register">
-            <Button className="registerBtn" color="warning">
+            <Button className="registerBtn">
               Register
              </Button></Link>
-          {' '}
+       
           <Link to="/login">
-            <Button className="logInBtn" color="primary">
-              Log In</Button></Link>
+            <Button className="logInBtn">
+              Log In
+            </Button></Link>
         </Container>
 
       </Container>

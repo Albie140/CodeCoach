@@ -10,7 +10,7 @@ function GraderPage(props) {
         👋 Hello there, {props.name}! 
         </h1>
         <div className="graderMiniBox">
-        Thank you for helping others learn how to code! Below is a list of some code newbies who need your help! Please be thorough and as informative and helpful with your comments as you can be!
+        Thank you for helping others learn how to code! Below is a list of some code newbies who need your help! Please be as thorough and as informative & helpful with your comments as you can be!
         </div>
 
         <GraderList />
