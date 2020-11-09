@@ -1,9 +1,13 @@
 import React, { Component } from "react";
-// import "./components/LearnerPage/Learner.css"
+// import "./components/LearnerPage/Learner.css";
+import Navbar from "../components/Navbar/Navbar";
 
 class LearnerAssignment extends Component {
     render() {
+       
         return (
+            <>
+            <Navbar />
             <div className="learnerAssignBox">
 
                 <h2 style={{ textAlign: "center" }}>Your homework about ((topic))</h2>
@@ -11,6 +15,8 @@ class LearnerAssignment extends Component {
                 <p className="assignComment">great job on the assignment!</p>
 
             </div>
+            
+            </>
         );
 
     }
