@@ -4,8 +4,10 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
-import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
+import { Input, Button } from 'reactstrap';
 import './Login.css';
+
+
 
 class Login extends Component {
   constructor() {
@@ -55,18 +57,20 @@ class Login extends Component {
     const { errors } = this.state;
 
     return (
+      <>
       <div className="loginBox mx-auto">
-        <div style={{ marginTop: "10px" }} className="row">
-          <div className="col s8 offset-s2">
-            <Link to="/">
+        <div className="row">
+          <div className="col s8">
+            <Link to="/" className="backhome">
               Back to home
             </Link>
-            <div className="col s12" style={{ paddingLeft: "10px", paddingTop: "10px" }}>
-              <h4>
-                <b>Login</b> below
-              </h4>
-              <p className="grey-text text-darken-1">
-                Don't have an account? <Link to="/register">Register</Link>
+            <div className="col s12 loginBelowPhrase">
+              <h3>
+                Login below
+              </h3>
+              <p>
+                Don't have an account? 
+                <Link to="/register" className="register"> Register</Link>
               </p>
             </div>
             <form noValidate onSubmit={this.onSubmit}>
@@ -110,7 +114,7 @@ class Login extends Component {
                 </span>
               </div>
               <div className="col s12" style={{ paddingLeft: "11.250px", paddingTop: "10px" }}>
-                <Button type="submit">
+                <Button className="btn loginBtn" type="submit">
                   Login
                 </Button>
               </div>
@@ -118,6 +122,8 @@ class Login extends Component {
           </div>
         </div>
       </div>
+
+      </>
     );
   }
 }

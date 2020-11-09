@@ -1,9 +1,26 @@
 .loginBox {
     padding: 40px;
+    padding-bottom: 90px;
     margin: 20px;
     background-color: #769eda;
     color: #e4d02e;
     width: 300px;
     border-radius: 10px;
     font-family: 'Bubblegum Sans', cursive;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+.loginBelowPhrase {
+    margin-top: 40px;
+}
+
+
+.loginBtn {
+    background-color: #e4d02e !important;
+    color: gray !important;
+}
+
+.register, .backhome {
+    color: lightgray !important;
+}
+

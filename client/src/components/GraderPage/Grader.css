@@ -1,0 +1,60 @@
+.graderPageBox {
+    padding: 5px;
+    margin: 5px;
+}
+
+.graderh1 {
+    background-color: #6b77e1;
+    border: 1px solid black;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 20px;
+    color: #e3d02e;
+}
+
+.graderMiniBox {
+    background-color: #e06161;
+    border: 1px solid white;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.graderListBox {
+    margin-top: 25px;
+}
+
+.gradeThisBtn {
+    background-color: #af1313 !important;
+    color: #e4d02e !important;
+    width: 200px;
+    float: right;
+}
+
+.gradeListItem {
+    background-color: transparent !important;
+    margin: 5px;
+    border: none;
+}
+
+.gradeCardBody {
+    background-color:#af1313 !important;
+}
+
+a {
+    color: #e4d02e !important;
+}
+
+.gradeCardHead {
+    background-color:#769eda !important;
+}
+
+.gradeCardFoot {
+    background-color:#769eda !important
+}
+
+

@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name": "Assignment 1",
+        "description": "Visual Studio Code & Github"
+    },
+    {
+        "id": 2,
+        "name": "Assignment 2",
+        "description": "HTML Basics"
+    },
+    {
+        "id": 3,
+        "name": "Assignment 3",
+        "description": "HTML Classes and IDs"
+    },
+    {
+        "id": 4,
+        "name": "Assignment 4",
+        "description": "CSS Basics"
+    },
+    {
+        "id": 5,
+        "name": "Assignment 5",
+        "description": "CSS Layouts"
+    },
+    {
+        "id": 6,
+        "name": "Assignment 6",
+        "description": "Javascript Basics"
+    },
+    {
+        "id": 9,
+        "name": "Assignment 7",
+        "description": "Javascript Basics Conditions"
+    },
+    {
+        "id": 7,
+        "name": "Assignment 8",
+        "description": "Javascript Arrays and Objects"
+    },
+    {
+        "id": 8,
+        "name": "Assignment 9",
+        "description": "Javascript Loop For"
+    },
+    {
+        "id": 10,
+        "name": "Assignment 10",
+        "description": "Create a Single Page Application"
+
+    }
+]

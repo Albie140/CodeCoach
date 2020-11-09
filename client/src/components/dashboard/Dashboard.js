@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
 import API from "../../utils/API";
+import Navbar from "../Navbar";
+
+import GraderPage from "../GraderPage"
+import LearnerPage from "../LearnerPage"
 
 class Dashboard extends Component {
   state = {
@@ -30,39 +34,39 @@ class Dashboard extends Component {
 
   render() {
     const { user } = this.props.auth;
+    
+    const isLearnerRole = user.role
+    // console.log(`@@@@@@@@@@@@@`)
+    // console.log(this.props)
+    let pagetoLoad;
+
+    if (isLearnerRole === "Learner") {
+      pagetoLoad = <LearnerPage
+                    id={user.id}
+                    name={user.name.split(" ")[0]}
+                />
+    } else {
+      pagetoLoad = <GraderPage
+                    id={user.id}
+                    name={user.name.split(" ")[0]}
+                 />
+    }
 
     console.log("this.props");
     console.log(this.props);
 
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
-          <div className="landing-copy col s12 center-align">
-            <h4>
-              <b>Hey there,</b> {user.name.split(" ")[0]}
+      <>
+        <div className="container-fluid">
 
-              <p>{this.state.isLearner ? "You're a Learner!" : "You're a Teacher!"}</p>
+        {/* <p>{this.state.isLearner ? "You're a Learner!" : "You're a Teacher!"}</p> */}
 
-              <p className="flow-text grey-text text-darken-1">
-                You are logged into a full-stack{" "}
-                <span style={{ fontFamily: "monospace" }}>MERN</span> app 👏
-              </p>
-            </h4>
-            <button
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px",
-                marginTop: "1rem"
-              }}
-              onClick={this.onLogoutClick}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
-              Logout
-            </button>
-          </div>
+          <Navbar />
+
+          {pagetoLoad}
+
         </div>
-      </div>
+      </>
     );
   }
 }
