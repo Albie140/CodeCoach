@@ -30,34 +30,33 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
 
     const isLearnerRole = user.role
-    // console.log(`@@@@@@@@@@@@@`)
-    // console.log(this.props)
+
     let navToDisplay;
 
     if (isLearnerRole === "Learner") {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/dashboard"><button className="btn btn-primary">Learner Dashboard</button></a>
+            <a href="/dashboard"><button className="navbtn btn-primary">Learner Dashboard</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/assignments"><button className="btn btn-primary">Learner Assignment</button></a>
+            <a href="/lassignments"><button className="navbtn btn-primary">Learner Assignment</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/timeline"><button className="btn btn-primary">Learner Timeline</button></a>
+            <a href="/timeline"><button className="navbtn btn-primary">Learner Timeline</button></a>
           </NavItem>
         </>
     } else {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/dashboard"><button className="btn btn-primary">Grader Dashboard</button></a>
+            <a href="/dashboard"><button className="navbtn btn-primary">Grader Dashboard</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/savedtograde"> <button className="btn btn-primary">Saved to Grade</button></a>
+            <a href="/savedtograde"> <button className="navbtn btn-primary">Saved to Grade</button></a>
           </NavItem>
         </>
     }
@@ -71,7 +70,7 @@ class Dashboard extends Component {
 
               {navToDisplay}
               <NavItem>
-                <button className="btn btn-primary"
+                <button className="navbtn btn-primary"
                   onClick={this.onLogoutClick}>
                   Logout
                 </button>
