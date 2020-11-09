@@ -1,10 +1,26 @@
+h1.learnerh1 {
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+h1.lessonHeadh1 {
+    padding: 10px;
+    font-family: 'Bubblegum Sans', cursive;
+    color: #e06161;
+}
+
 .LearnerProgBar {
     width: 70%;
     margin-top: 10px;
 }
 
-.lessonCard {
-    margin: 5px;
+.lessonsMainDiv {
+    width: 80%;
+    margin: 10px;
+}
+
+.lessonCard { 
+    width: 80%;
+    margin: 6px 2px;
     background-color: #dcc5c5 !important; 
 }
 

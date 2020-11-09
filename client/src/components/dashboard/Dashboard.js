@@ -19,7 +19,7 @@ class Dashboard extends Component {
   };
 
   componentDidMount() {
-    API.getPostById(this.props.auth.user.id)
+    API.getUserById(this.props.auth.user.id)
       .then(postData => {
         console.log(postData.data);
         if (postData.data.role === "Learner") {

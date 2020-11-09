@@ -4,13 +4,13 @@ const userController = require("../controllers/userController");
 // Post API Routes go here
 // /api/users/
 router.route("/")
-    .get(userController.findAll)
-    .post(userController.create);
+    .get(userController.findAllUsers)
+    .post(userController.createUser);
 
 // /api/users/:id routes only
 router.route("/:id")
-    .get(userController.findById)
-    .put(userController.update)
-    .delete(userController.remove)
+    .get(userController.findByUserId)
+    .put(userController.updateUser)
+    .delete(userController.removeUser)
 
 module.exports = router;
