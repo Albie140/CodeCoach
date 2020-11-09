@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../../actions/authActions";
+import API from "../../utils/API";
 
 class Dashboard extends Component {
   onLogoutClick = e => {
@@ -9,8 +10,19 @@ class Dashboard extends Component {
     this.props.logoutUser();
   };
 
+  componentDidMount() {
+    API.getPosts()
+      .then(postData => {
+        console.log(postData.data);
+      })
+      .catch(err => console.log(err));
+  }
+
   render() {
     const { user } = this.props.auth;
+
+    console.log("this.props");
+    console.log(this.props);
 
     return (
       <div style={{ height: "75vh" }} className="container valign-wrapper">
