@@ -14,6 +14,10 @@ import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
+import LearnerDashboard from "./pages/LearnerDashboard";
+import LearnerTimeline from "./pages/LearnerTimeline";
+import LearnerAssignment from "./components/LearnerPage/LearnerAssignment";
+import GraderDashboard from "./pages/GraderDashboard";
 
 
 // Check for token to keep user logged in
@@ -46,6 +50,10 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
+              <PrivateRoute exact path="/ldashboard" component={LearnerDashboard} />
+              <PrivateRoute exact path="/ltimeline" component={LearnerTimeline} />
+              <PrivateRoute exact path="/lassignment" component={LearnerAssignment} />
+              <PrivateRoute exact path="/gdashboard" component={GraderDashboard} />
             </Switch>
           </div>
         </Router>

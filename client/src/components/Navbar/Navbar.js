@@ -35,16 +35,16 @@ class Dashboard extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="ml-auto">
               <NavItem>
-                <NavLink href="#">GraderDashboard</NavLink>
+                <NavLink href="/gdashboard">GraderDashboard</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">LearnerDashboard</NavLink>
+                <NavLink href="/ldashboard">LearnerDashboard</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">LearnerAssignments</NavLink>
+                <NavLink href="/lassignments">LearnerAssignments</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">LearnerTimeline</NavLink>
+                <NavLink href="/ltimeline">LearnerTimeline</NavLink>
               </NavItem>
               <NavItem>
                 <button className="btn btn-primary LogoutBtn"
