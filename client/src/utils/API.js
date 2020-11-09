@@ -31,7 +31,7 @@ export default {
     removePost: id => {
         return axios.delete("/api/post/" + id);
     },
-    getAllUngradedPosts: id => {
+    getAllUngradedPosts: () => {
         return axios.get("/api/post/ungraded");
     },
     getAllPostsByUser: user => {
