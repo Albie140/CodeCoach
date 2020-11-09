@@ -1,7 +1,7 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Navbar from "../components/Navbar/Navbar";
 
-class LearnerTimeline extends Component {
+class SavedtoGrade extends Component {
   render() {
     return (
       <>
@@ -15,4 +15,4 @@ class LearnerTimeline extends Component {
   };
   };
   
-  export default LearnerTimeline;
+  export default SavedtoGrade;
