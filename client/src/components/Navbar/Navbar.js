@@ -37,7 +37,7 @@ class Dashboard extends Component {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/dashboard"><button className="navbtn btn-primary">Learner Dashboard</button></a>
+            <a href="/ldashboard"><button className="navbtn btn-primary">Learner Dashboard</button></a>
           </NavItem>
 
           <NavItem>
@@ -45,14 +45,14 @@ class Dashboard extends Component {
           </NavItem>
 
           <NavItem>
-            <a href="/timeline"><button className="navbtn btn-primary">Learner Timeline</button></a>
+            <a href="/ltimeline"><button className="navbtn btn-primary">Learner Timeline</button></a>
           </NavItem>
         </>
     } else {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/dashboard"><button className="navbtn btn-primary">Grader Dashboard</button></a>
+            <a href="/gdashboard"><button className="navbtn btn-primary">Grader Dashboard</button></a>
           </NavItem>
 
           <NavItem>
