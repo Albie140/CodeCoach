@@ -60,13 +60,14 @@ class Register extends Component {
       <div className="signUpBox mx-auto">
         <div className="row">
           <div className="col s8 offset-s2">
-            <Link to="/"> Back to home
-            </Link>
-            <div className="col s12" style={{ paddingLeft: "10px", paddingTop: "10px" }}>
+            <p>
+            <Link to="/" className="regiBackHomeLink">Back to home
+            </Link></p>
+            <div className="col s12 regiAcct">
               <h4>
                 Register for an account 
               </h4>
-              <p> Already have an account? <Link to="/login">Log in</Link>
+              <p className="registerptag"> Already have an account? <Link to="/login" className="regiLogInLink">Log in</Link>
               </p>
             </div>
           
@@ -133,7 +134,7 @@ class Register extends Component {
                 </div>
                     
                 <div className="input-field col s12" style={{marginTop: "10px"}}>
-                  <Label>Enter a role</Label>
+                  <Label>Enter a Role</Label>
                   <Input 
                     type="select" 
                     name="role" 
@@ -146,10 +147,10 @@ class Register extends Component {
                   </Input>
                   </div>
               
-                <div className="col s12" style={{ paddingLeft: "11.250px", marginTop: "10px" }}>
+                <div className="col s12 registerButton">
                   <Button
                     type="submit"
-                    className="btn">
+                    className="regiSignUpBtn">
                     Sign up
                 </Button>
                 </div>

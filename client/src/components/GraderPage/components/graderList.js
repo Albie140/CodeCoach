@@ -10,8 +10,8 @@ import GraderCard from './graderCard'
 function GraderList() {
     return (
         <div className="graderListBox">
-            <h1 className="gListh1">Codes to Grade:</h1>
-            <ListGroup>
+            <h1 className="gListh1">List of Codes to Grade</h1>
+            <ListGroup className="graderListGroup">
                 {/* THIS NEEDS TO BE MAP OF THE THINGS TO GRADE THIS IS JUST A MOCK OF A LOOP */}
                 <ListGroupItem className="gradeListItem">
                     <GraderCard />

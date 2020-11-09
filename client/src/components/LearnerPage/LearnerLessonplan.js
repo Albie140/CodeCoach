@@ -7,11 +7,11 @@ const LearnerLessonplan = (props) => {
 
     return (
       
-       
         <Col sm="6">
           <Card body className="lessonCard">
             <CardTitle tag="h5">{props.name}</CardTitle>
             <CardText>{props.description}</CardText>
+            <CardText>[Instruction here] {props.instructions}</CardText>
             <Button className="lessonBtn">Go somewhere</Button>
           </Card>
         </Col>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Learner.css"
 
-function LearnerAssignment() {
+function LearnerGradedAssignment() {
     return (
       <div className="learnerAssignBox">
 
@@ -13,4 +13,4 @@ function LearnerAssignment() {
     );
   }
   
-  export default LearnerAssignment;
+  export default LearnerGradedAssignment;

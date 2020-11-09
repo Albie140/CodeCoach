@@ -1,5 +1,5 @@
 .loginBox {
-    padding: 40px;
+    padding: 30px;
     padding-bottom: 90px;
     margin: 20px;
     background-color: #769eda;
@@ -11,16 +11,35 @@
 }
 
 .loginBelowPhrase {
-    margin-top: 40px;
+    margin-top: 60px;
+    margin-left: -10px !important;
+    margin-bottom: 40px !important;
 }
-
 
 .loginBtn {
     background-color: #e4d02e !important;
     color: gray !important;
+    width: 100px;
+}
+
+.loginBtn:hover {
+    color: #e4d02e !important;
+    background: gray !important;
 }
 
 .register, .backhome {
     color: lightgray !important;
 }
 
+p.logInptag, .backhome {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.backhome {
+    float: right;
+}
+
+div.logInbuttonDiv {
+    margin-top: 20px;
+    text-align: center;
+}
