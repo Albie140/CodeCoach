@@ -2,12 +2,12 @@ const router = require("express").Router();
 const userController = require("../controllers/userController");
 
 // Post API Routes go here
-// /api/post/
+// /api/users/
 router.route("/")
     .get(userController.findAll)
     .post(userController.create);
 
-// /api/post/:id routes only
+// /api/users/:id routes only
 router.route("/:id")
     .get(userController.findById)
     .put(userController.update)
