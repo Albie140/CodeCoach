@@ -1,3 +1,4 @@
+import React from "react";
 import data from "./src/lessonPlan.json";
 
 const newData = data.map((data) => {

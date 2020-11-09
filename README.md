@@ -35,7 +35,6 @@ I want to learn the basics of how to build an app for free
 Including a basic, flexible lesson plan to keep organized
 With coding resources provided for self learning 
 And a professional’s feedback on my code to improve
-
 ```
 
 ## Application Description
@@ -86,7 +85,7 @@ Alberte Laventure
 
 Joshua Trevethan
 * Github: [JoshTrev](https://github.com/JoshTrev) 
-* Email: <alberte.laventure@gmail.com> 
+* Email: <> 
 
 ## License
 

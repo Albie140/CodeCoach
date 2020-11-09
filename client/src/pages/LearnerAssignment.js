@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import React from 'react';
+import { Button } from 'reactstrap';
 // import "./components/LearnerPage/Learner.css";
 import Navbar from "../components/Navbar/Navbar";
 
@@ -12,7 +14,8 @@ class LearnerAssignment extends Component {
 
                 <h2 style={{ textAlign: "center" }}>Your homework about ((topic))</h2>
                 <h3>((Grader)) said...</h3>
-                <p className="assignComment">great job on the assignment!</p>
+                <p className="assignComment">Any questions or comments you'd like to make to your grader?</p>
+
 
             </div>
             

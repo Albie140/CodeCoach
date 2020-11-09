@@ -7,7 +7,7 @@ function LearnerAssignment() {
 
           <h2 style={{textAlign: "center"}}>Your homework about ((topic))</h2>
           <h3>((Grader)) said...</h3>
-          <p className="assignComment">great job on the assignment!</p>
+          <p className="assignComment">Any questions or comments you'd like to make to your grader?</p>
 
       </div>
     );
