@@ -7,6 +7,9 @@ router.route("/")
     .get(userController.findAllUsers)
     .post(userController.createUser);
 
+router.route("/name/:name")
+    .get(userController.findByUserNameTest)
+
 // /api/users/:id routes only
 router.route("/:id")
     .get(userController.findByUserId)
