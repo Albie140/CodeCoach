@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import LearnerLessonplan from "../components/LearnerPage/LearnerLessonplan.js";
 import lessons from '../lessonPlan.json';
 import API from "../utils/API";
+import LearnerInput from "../components/LearnerPage/components/LearnerInputBox";
 
 class LearnerAssignment extends Component {
     state = {
@@ -43,7 +44,7 @@ class LearnerAssignment extends Component {
                     if (postData.data[i].title === "Test3") {
                         console.log("This is Test3!!!");
                     }
-                    else{
+                    else {
                         console.log("This is Not Test3!");
                     }
                 }
@@ -74,6 +75,10 @@ class LearnerAssignment extends Component {
 
                 <button onClick={this.onClickTest}>Test Confirm</button>
 
+                <div className="submitWorkDiv">
+                    <h2>Submit your work!</h2>
+                    <LearnerInput />
+                </div>
             </>
         );
 
