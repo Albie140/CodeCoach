@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Row } from 'reactstrap';
 import "../components/LearnerPage/Learner.css"
 import Navbar from "../components/Navbar/Navbar";
-import LearnerLessonplan from "../components/LearnerPage/LearnerLessonplan.js"
+import LearnerLessonplan from "../components/LearnerPage/LearnerLessonplan.js";
 import lessons from '../lessonPlan.json';
 
 class LearnerAssignment extends Component {

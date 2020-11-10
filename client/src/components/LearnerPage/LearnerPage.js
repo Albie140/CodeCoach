@@ -22,9 +22,14 @@ function LearnerPage(props) {
           👋 Hello there, {props.name}!
         </h1>
 
-        <div className="learnerGradeDiv">
-          <h2 className="learnh2">Recently Graded:</h2>
+// <<<<<<< SeyBranch
+//         <div className="learnerGradeDiv">
+//           <h2 className="learnh2">Recently Graded:</h2>
 
+// =======
+//         <div>
+//           <h2>Graded Assignment: </h2>
+// >>>>>>> main
           <LearnerGradedAssignment />
 
         </div>
