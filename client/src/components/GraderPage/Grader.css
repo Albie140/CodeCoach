@@ -1,60 +1,85 @@
-.graderPageBox {
-    padding: 5px;
-    margin: 5px;
+div.graderPageBox {
+    font-family: 'Bubblegum Sans', cursive;
 }
 
-.graderh1 {
-    background-color: #6b77e1;
-    border: 1px solid black;
+h1.graderh1 {
+    background-color: #769eda;
     text-align: center;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
-    border-radius: 10px;
-    padding: 20px;
+    border-radius: 30px;
+    padding: 10px;
     color: #e3d02e;
 }
 
 .graderMiniBox {
     background-color: #e06161;
-    border: 1px solid white;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
     width: 60%;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 20px 50px;
+
 }
 
 .graderListBox {
-    margin-top: 25px;
+    margin-top: 35px;
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+
+h1.gListh1 {
+    background-color: #769eda;
+    text-align: center;
+    margin: 0 auto;
+    width: 70%;
+    border-radius: 30px;
+    padding: 5px;
+    color: #e3d02e;
+}
+
+img.graderIMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
 .gradeThisBtn {
-    background-color: #af1313 !important;
-    color: #e4d02e !important;
-    width: 200px;
     float: right;
+    color: #e4d02e !important;
 }
 
 .gradeListItem {
     background-color: transparent !important;
-    margin: 5px;
-    border: none;
+    margin: 0 auto;
+    border: none !important;
 }
 
-/* .gradeCardBody {
-    background-color:#af1313 !important;
-} */
-
-a {
-    color: #e4d02e !important;
+.gradeCardMain {
+    width: 100%;
+    border: none !important;
+    display: flex;
+    justify-content: center;
 }
+
+.gradeCardBody {
+    background-color: rgb(232, 230, 211);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 
 .gradeCardHead {
     background-color:#769eda !important;
+    color: #e4d02e;
 }
 
 .gradeCardFoot {
-    background-color:#769eda !important
+    background-color:#769eda !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 

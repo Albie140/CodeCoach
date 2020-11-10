@@ -2,9 +2,13 @@ import React from "react";
 import "./Learner.css"
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
+<<<<<<< HEAD:client/src/components/LearnerPage/LearnerAssignment.js
 function LearnerAssignment() {
   state = {}
   render() {
+=======
+function LearnerGradedAssignment() {
+>>>>>>> 951251a47e3d320db4d6cf5154de137ce33c068d:client/src/components/LearnerPage/LearnerGradedAssignment.js
     return (
       <div className="learnerAssignBox">
 
@@ -22,5 +26,10 @@ function LearnerAssignment() {
     </div >
   );
   }
+<<<<<<< HEAD:client/src/components/LearnerPage/LearnerAssignment.js
 
   export default LearnerAssignment;
+=======
+  
+  export default LearnerGradedAssignment;
+>>>>>>> 951251a47e3d320db4d6cf5154de137ce33c068d:client/src/components/LearnerPage/LearnerGradedAssignment.js

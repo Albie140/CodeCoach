@@ -36,8 +36,7 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
     
     const isLearnerRole = user.role
-    // console.log(`@@@@@@@@@@@@@`)
-    // console.log(this.props)
+
     let pagetoLoad;
 
     if (isLearnerRole === "Learner") {
@@ -58,8 +57,6 @@ class Dashboard extends Component {
     return (
       <>
         <div className="container-fluid">
-
-        {/* <p>{this.state.isLearner ? "You're a Learner!" : "You're a Teacher!"}</p> */}
 
           <Navbar />
 

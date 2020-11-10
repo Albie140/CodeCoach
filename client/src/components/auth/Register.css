@@ -8,3 +8,38 @@
     font-family: 'Bubblegum Sans', cursive;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+
+.regiLogInLink, .regiBackHomeLink {
+    color: gray !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.regiBackHomeLink {
+    float: right;
+}
+
+div.registerButton {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+p.registerptag {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div.regiAcct {
+    padding-top: 35px;
+    margin-left: -10px;
+}
+
+.regiSignUpBtn {
+    background-color: #e06161 !important;
+    width: 130px;
+}
+
+.regiSignUpBtn:hover {
+    color: #e06161 !important;
+    background: #e4d02e !important;
+}
