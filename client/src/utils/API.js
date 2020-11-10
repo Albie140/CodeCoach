@@ -7,6 +7,9 @@ export default {
     getUserById: id => {
         return axios.get("/api/users/" + id);
     },
+    getUserByNameTest: name => {
+        return axios.get("/api/users/name/"+ name);
+    },
     saveUser: () => {
         return axios.post("/api/users");
     },
@@ -22,8 +25,9 @@ export default {
     getPostById: id => {
         return axios.get("/api/post/" + id);
     },
-    savePost: () => {
-        return axios.post("/api/post");
+    savePost: newPost => {
+        console.log("Saving Post")
+        return axios.post("/api/post", newPost);
     },
     updatePost: id => {
         return axios.put("/api/post/" + id);
@@ -31,8 +35,9 @@ export default {
     removePost: id => {
         return axios.delete("/api/post/" + id);
     },
-    getAllUngradedPosts: () => {
-        return axios.get("/api/post/ungraded");
+    getAllUngradedPosts: grade => {
+        console.log("Getting all Ungraded Posts")
+        return axios.get("/api/post/ungraded/" + grade);
     },
     getAllPostsByUser: user => {
         return axios.get("/api/post/" + user);
