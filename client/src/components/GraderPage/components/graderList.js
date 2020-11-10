@@ -24,7 +24,6 @@ function GraderList() {
             .catch(err => console.log(err));
     }
 
-
     return (
         <div className="graderListBox">
 
