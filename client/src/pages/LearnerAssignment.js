@@ -16,20 +16,26 @@ class LearnerAssignment extends Component {
         console.log("Test!!!")
 
         // API.savePost({
-        //     title: "Test1",
+        //     title: "Test4",
         //     user: "Test User",
         //     grader: "",
         //     instructions: "Test Instructions",
         //     userAnswer: "Answer Goes Here",
         //     graderComments: "",
-        //     grade: ""
+        //     grade: "ungraded"
         // })
         //     .then(postData => {
         //         console.log(postData.data);
         //     })
         //     .catch(err => console.log(err));
 
-        API.getPosts()
+        // API.getUserByNameTest("Josh6")
+        //     .then(postData => {
+        //         console.log(postData.data);
+        //     })
+        //     .catch(err => console.log(err));
+
+        API.getAllUngradedPosts("ungraded")
             .then(postData => {
                 console.log(postData.data);
             })

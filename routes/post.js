@@ -15,12 +15,7 @@ router.route("/:id")
     .delete(userController.removePost)
 
 // /api/post/ungraded to get all ungraded posts (posts that need to be graded)
-router.route("/ungraded")
+router.route("/ungraded/:grade")
     .get(userController.findAllUngradedPosts)
-
-// /api/post/:user to get all posts by that user
-router.route("/:user")
-    .get(userController.findAllUserPosts)
-
 
 module.exports = router;

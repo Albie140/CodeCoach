@@ -17,6 +17,16 @@ module.exports = {
             })
             .catch(err => console.log(err));
     },
+    findByUserNameTest: (req, res) => {
+        console.log(req.params)
+        db.User
+            .find(req.params)
+            .then(postData => {
+                res.json(postData);
+                console.log("findByUserNameTest")
+            })
+            .catch(err => console.log(err));
+    },
     createUser: (req, res) => {
         db.User
             .create(req.body)
@@ -59,8 +69,9 @@ module.exports = {
             .catch(err => console.log(err));
     },
     findAllUngradedPosts: (req, res) => {
+        console.log(req.params);
         db.Post
-            .find({})
+            .find(req.params)
             .then(postData => {
                 res.json(postData);
                 console.log("findAllUngradedPosts")
@@ -69,7 +80,7 @@ module.exports = {
     },
     findAllUserPosts: (req, res) => {
         db.Post
-            .find({name: req.params.user})
+            .find({ name: req.params.user })
             .then(postData => {
                 res.json(postData);
             })
