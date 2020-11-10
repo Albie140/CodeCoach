@@ -6,27 +6,27 @@ import { Card, Button, CardHeader, CardFooter, CardBody,
 // NEED TO PASS PROPS OF LEARNER SUBMITTED WORK
 // FROM GRADERLIST
 
-function GraderCard() {
+function GraderCard(props) {
     return (
         <div>
             <Card className="gradeCardMain">
-                <CardHeader className="gradeCardHead" tag="h3">Name of Person To Grade</CardHeader>
+                <CardHeader className="gradeCardHead" tag="h3">{props.user}</CardHeader>
 
                 <CardBody className="gradeCardBody">
 
-                    <CardTitle tag="h5">Lesson: Lesson Topic</CardTitle>
+                    <CardTitle tag="h5">Lesson: {props.title}</CardTitle>
                     <CardText>
-                        Learner Comments: Any comments by learner about the assignment
+                        Learner Comments: {props.userComments}
                     </CardText>
 
                     <CardText>Github Repo: 
-                    <a href="http://github.com" target="_blank"> http://github.com</a>
+                    <a href={props.userLink} target="_blank"> {props.userLink}</a>
                     </CardText> 
                     
                 </CardBody>
 
                 <CardFooter className="gradeCardFoot">
-                    <CardText className="text-muted">Date Submitted: Date it was submited
+                    <CardText className="text-muted"> 
 
                         <Button className="gradeThisBtn" >Grade This!</Button>
 
