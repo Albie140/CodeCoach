@@ -63,7 +63,7 @@ class Dashboard extends Component {
 
     return (
       <div>
-        <Navbar className="sticky-top" color="faded" light expand="lg">
+        <Navbar className="sticky-top" color="faded" light expand="md">
           <NavbarToggler onClick={this.toggle} className="mr-2" />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav navbar className="ml-auto">
