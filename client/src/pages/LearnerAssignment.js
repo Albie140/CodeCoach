@@ -38,6 +38,15 @@ class LearnerAssignment extends Component {
         API.getAllUngradedPosts("ungraded")
             .then(postData => {
                 console.log(postData.data);
+
+                for (let i = 0; i < postData.data.length; i++) {
+                    if (postData.data[i].title === "Test3") {
+                        console.log("This is Test3!!!");
+                    }
+                    else{
+                        console.log("This is Not Test3!");
+                    }
+                }
             })
             .catch(err => console.log(err));
     };
@@ -62,8 +71,6 @@ class LearnerAssignment extends Component {
                             />)}
                     </Row>
                 </div>
-
-                <a href="/PostTest"><button className="navbtn">Learner Timeline</button></a>
 
                 <button onClick={this.onClickTest}>Test Confirm</button>
 
