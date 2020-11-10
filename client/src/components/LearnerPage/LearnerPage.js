@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Learner.css';
-import ProgressBar from "../ProgressBar"
+import ProgressBar from "./components/ProgressBar"
 import lessons from './lessonPlan.json';
 import LearnerGradedAssignment from './LearnerGradedAssignment';
 import LearnerInputBox from './components/LearnerInputBox'
@@ -20,7 +20,7 @@ function LearnerPage(props) {
     <div>
       <div className="container-fluid">
         <h1 className="learnerh1">
-          :wave: Hello there, {props.name}!
+        👋 Hello there, {props.name}!
         </h1>
 
         <div className="learnerGradeDiv">

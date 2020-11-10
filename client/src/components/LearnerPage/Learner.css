@@ -62,11 +62,6 @@ h1.lessonHeadh1 {
     background-color: #dcc5c5 !important; 
 }
 
-.lessonBtn {
-    background-color: #e4d02e !important;
-    color: black !important;
-}
-
 img.learnerIMG {
     display: block;
     margin-left: auto;
@@ -76,4 +71,35 @@ img.learnerIMG {
 
 h2.progBarh2 {
     font-family: 'Bubblegum Sans', cursive;
+}
+
+img.lessonModalIMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.lessonCardName {
+    font-family: 'Bubblegum Sans', cursive;
+}
+
+.modalCloseBtn {
+    background-color: #6b77e1 !important;
+}
+
+.lessonViewBtn {
+    background-color: #e06161 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.lessonViewBtn:hover {
+    color: black !important;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) !important;
+}
+
+.lessonRssBtn {
+    background-color: #769eda !important;
+    border: none !important;
 }
