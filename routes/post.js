@@ -6,6 +6,7 @@ const userController = require("../controllers/userController");
 router.route("/")
     .get(userController.findAllPosts)
     .post(userController.createPost);
+    console.log("Using /api/post!")
 
 // /api/post/:id routes only
 router.route("/:id")

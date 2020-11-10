@@ -60,9 +60,10 @@ module.exports = {
     },
     findAllUngradedPosts: (req, res) => {
         db.Post
-            .find({grade: ""})
+            .find({})
             .then(postData => {
                 res.json(postData);
+                console.log("findAllUngradedPosts")
             })
             .catch(err => console.log(err));
     },

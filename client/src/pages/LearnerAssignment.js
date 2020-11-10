@@ -4,11 +4,37 @@ import "../components/LearnerPage/Learner.css"
 import Navbar from "../components/Navbar/Navbar";
 import LearnerLessonplan from "../components/LearnerPage/LearnerLessonplan.js";
 import lessons from '../lessonPlan.json';
+import API from "../utils/API";
 
 class LearnerAssignment extends Component {
     state = {
         lessons: lessons
     }
+
+    onClickTest = e => {
+        e.preventDefault();
+        console.log("Test!!!")
+
+        // API.savePost({
+        //     title: "Test1",
+        //     user: "Test User",
+        //     grader: "",
+        //     instructions: "Test Instructions",
+        //     userAnswer: "Answer Goes Here",
+        //     graderComments: "",
+        //     grade: ""
+        // })
+        //     .then(postData => {
+        //         console.log(postData.data);
+        //     })
+        //     .catch(err => console.log(err));
+
+        API.getPosts()
+            .then(postData => {
+                console.log(postData.data);
+            })
+            .catch(err => console.log(err));
+    };
 
     render() {
         return (
@@ -32,6 +58,8 @@ class LearnerAssignment extends Component {
                 </div>
 
                 <a href="/PostTest"><button className="navbtn">Learner Timeline</button></a>
+
+                <button onClick={this.onClickTest}>Test Confirm</button>
 
             </>
         );

@@ -22,8 +22,9 @@ export default {
     getPostById: id => {
         return axios.get("/api/post/" + id);
     },
-    savePost: () => {
-        return axios.post("/api/post");
+    savePost: newPost => {
+        console.log("Saving Post")
+        return axios.post("/api/post", newPost);
     },
     updatePost: id => {
         return axios.put("/api/post/" + id);
@@ -32,6 +33,7 @@ export default {
         return axios.delete("/api/post/" + id);
     },
     getAllUngradedPosts: () => {
+        console.log("Getting all Ungraded Posts")
         return axios.get("/api/post/ungraded");
     },
     getAllPostsByUser: user => {
