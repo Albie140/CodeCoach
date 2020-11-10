@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import LearnerLessonplan from "../components/LearnerPage/LearnerLessonplan.js";
 import lessons from '../lessonPlan.json';
 import API from "../utils/API";
+import LearnerInputBox from "../components/LearnerPage/components/LearnerInputBox"
 
 class LearnerAssignment extends Component {
     state = {
@@ -74,6 +75,10 @@ class LearnerAssignment extends Component {
 
                 <button onClick={this.onClickTest}>Test Confirm</button>
 
+                <div>
+                    <h2>Submit your work!</h2>
+                    <LearnerInputBox />
+                </div>
             </>
         );
 

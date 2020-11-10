@@ -63,16 +63,16 @@ function LearnerInputBox(props) {
                 <Label for="exampleSelect">Assignment Number</Label>
 
                 <Input type="select" name="select" id="exampleSelect" onChange={e => setAssignmentNumber(e.target.value)}>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
+                    <option>Visual Studio Code & Github</option>
+                    <option>HTML Basics</option>
+                    <option>HTML Classes and IDs</option>
+                    <option>CSS Basics</option>
+                    <option>CSS Layouts</option>
+                    <option>Javascript Basics</option>
+                    <option>avascript Basic Conditions</option>
+                    <option>Javascript Arrays and Objects</option>
+                    <option>Javascript For Loops</option>
+                    <option>Create a Single Page App</option>
                 </Input>
             </FormGroup>
 
