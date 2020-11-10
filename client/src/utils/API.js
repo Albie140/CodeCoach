@@ -40,6 +40,6 @@ export default {
         return axios.get("/api/post/ungraded/" + grade);
     },
     getAllPostsByUser: user => {
-        return axios.get("/api/post/" + user);
+        return axios.get("/api/post/user/" + user);
     }
 }

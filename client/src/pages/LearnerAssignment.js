@@ -39,14 +39,14 @@ class LearnerAssignment extends Component {
             .then(postData => {
                 console.log(postData.data);
 
-                for (let i = 0; i < postData.data.length; i++) {
-                    if (postData.data[i].title === "Test3") {
-                        console.log("This is Test3!!!");
-                    }
-                    else{
-                        console.log("This is Not Test3!");
-                    }
-                }
+                // for (let i = 0; i < postData.data.length; i++) {
+                //     if (postData.data[i].title === "Test3") {
+                //         console.log("This is Test3!!!");
+                //     }
+                //     else{
+                //         console.log("This is Not Test3!");
+                //     }
+                // }
             })
             .catch(err => console.log(err));
     };

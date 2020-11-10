@@ -37,7 +37,7 @@ function LearnerPage(props) {
 
         <div>
           <h2>Submit your work!</h2>
-          <LearnerInputBox />
+          <LearnerInputBox userName={props.name}/>
         </div>
       </div>
     </div>
