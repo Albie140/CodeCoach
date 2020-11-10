@@ -24,7 +24,7 @@ function LearnerPage(props) {
         </h1>
 
         <div>
-          <h2>Graded Assigment: </h2>
+          <h2>Graded Assignment: </h2>
           <LearnerGradedAssignment />
 
         </div>
