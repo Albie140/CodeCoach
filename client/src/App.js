@@ -16,6 +16,7 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import LearnerDashboard from "./pages/LearnerDashboard";
 import LearnerTimeline from "./pages/LearnerTimeline";
+import PostTest from "./pages/PostTest";
 import LearnerAssignment from "./pages/LearnerAssignment";
 import GraderDashboard from "./pages/GraderDashboard";
 import SavedToGrade from "./pages/SavedToGrade";
@@ -56,6 +57,7 @@ class App extends Component {
               <PrivateRoute exact path="/lassignments" component={LearnerAssignment} />
               <PrivateRoute exact path="/gdashboard" component={GraderDashboard} />
               <PrivateRoute exact path="/savedtograde" component={SavedToGrade} />
+              <PrivateRoute exact path="/PostTest" component={PostTest} />
             </Switch>
           </div>
         </Router>

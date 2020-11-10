@@ -31,6 +31,8 @@ class LearnerAssignment extends Component {
                     </Row>
                 </div>
 
+                <a href="/PostTest"><button className="navbtn">Learner Timeline</button></a>
+
             </>
         );
 
