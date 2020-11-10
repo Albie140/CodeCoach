@@ -3,6 +3,7 @@ import './Learner.css';
 import ProgressBar from "../ProgressBar"
 import lessons from './lessonPlan.json';
 import LearnerGradedAssignment from './LearnerGradedAssignment';
+import LearnerInputBox from './components/LearnerInputBox'
 
 
 function LearnerPage(props) {
@@ -22,14 +23,9 @@ function LearnerPage(props) {
           👋 Hello there, {props.name}!
         </h1>
 
-// <<<<<<< SeyBranch
-//         <div className="learnerGradeDiv">
-//           <h2 className="learnh2">Recently Graded:</h2>
-
-// =======
-//         <div>
-//           <h2>Graded Assignment: </h2>
-// >>>>>>> main
+        <div className="learnerGradeDiv">
+          <h2 className="learnh2">Recently reviewed code:</h2>
+          
           <LearnerGradedAssignment />
 
         </div>
@@ -38,8 +34,13 @@ function LearnerPage(props) {
         <div className="LearnerProgBar">
           <h2 className="progBarh2">Your Progress: </h2>
 
-         <ProgressBar />
+          <ProgressBar />
 
+        </div>
+
+        <div>
+          <h2>Submit your work!</h2>
+          <LearnerInputBox />
         </div>
 
       </div>

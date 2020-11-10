@@ -4,6 +4,7 @@ div.graderPageBox {
 
 h1.graderh1 {
     background-color: #6b77e1;
+    background-image: linear-gradient(to right top, #e06161, #e06486, #d36fa8, #bc7ec3, #9e8dd4, #7a9ee5, #4cadeb, #00bae6, #00cbd1, #04d6a0, #8cd962, #e4d02e);
     text-align: center;
     width: 90%;
     margin: 0 auto;
