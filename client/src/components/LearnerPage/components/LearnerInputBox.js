@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "../Learner.css"
-import { Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import API from "../../../utils/API";
 
 function LearnerInputBox(props) {
@@ -93,7 +93,7 @@ function LearnerInputBox(props) {
             </FormGroup>
 
             <FormGroup>
-                <button onClick={submitAssignment}> SUBMIT </button>
+                <Button className="submitWorkBtn" onClick={submitAssignment}> SUBMIT </Button>
             </FormGroup>
 
 
