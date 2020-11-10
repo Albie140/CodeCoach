@@ -37,22 +37,22 @@ class Dashboard extends Component {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/ldashboard"><button className="navbtn">Learner Dashboard</button></a>
+            <a href="/ldashboard"><button className="navbtn">Dashboard</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/lassignments"><button className="navbtn">Learner Assignment</button></a>
+            <a href="/lassignments"><button className="navbtn">Assignments</button></a>
           </NavItem>
 
           <NavItem>
-            <a href="/ltimeline"><button className="navbtn">Learner Timeline</button></a>
+            <a href="/ltimeline"><button className="navbtn">Timeline</button></a>
           </NavItem>
         </>
     } else {
       navToDisplay =
         <>
           <NavItem>
-            <a href="/gdashboard"><button className="navbtn">Grader Dashboard</button></a>
+            <a href="/gdashboard"><button className="navbtn">Dashboard</button></a>
           </NavItem>
 
           <NavItem>
