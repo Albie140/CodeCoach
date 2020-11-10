@@ -79,10 +79,13 @@ module.exports = {
             .catch(err => console.log(err));
     },
     findAllUserPosts: (req, res) => {
+        console.log("findAllUserPosts")
+        console.log(req.params)
         db.Post
-            .find({ name: req.params.user })
+            .find(req.params)
             .then(postData => {
                 res.json(postData);
+                console.log("find all posts by this user")
             })
             .catch(err => console.log(err));
     },
