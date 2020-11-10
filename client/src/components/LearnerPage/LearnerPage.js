@@ -35,10 +35,6 @@ function LearnerPage(props) {
 
         </div>
 
-        <div>
-          <h2>Submit your work!</h2>
-          <LearnerInputBox />
-        </div>
       </div>
     </div>
   );

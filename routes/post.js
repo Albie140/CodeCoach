@@ -18,4 +18,8 @@ router.route("/:id")
 router.route("/ungraded/:grade")
     .get(userController.findAllUngradedPosts)
 
+// /api/post/user to get all posts by that user
+router.route("/user/:user")
+    .get(userController.findAllUserPosts)
+
 module.exports = router;

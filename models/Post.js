@@ -5,8 +5,8 @@ const postSchema = new Schema ({
     title: String,
     user: String,
     grader: String,
-    instructions: String,
-    userAnswer: String,
+    userLink: String,
+    userComments: String,
     graderComments: String,
     grade: String
 });
