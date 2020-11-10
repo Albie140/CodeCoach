@@ -3,12 +3,12 @@ div.graderPageBox {
 }
 
 h1.graderh1 {
-    background-color: #769eda;
+    background-color: #6b77e1;
     text-align: center;
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
     border-radius: 30px;
-    padding: 10px;
+    padding: 10px 5px;
     color: #e3d02e;
 }
 
@@ -16,13 +16,12 @@ h1.graderh1 {
     background-color: #e06161;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
-    width: 60%;
+    font-size: 18px;
+    width: 80%;
     margin: 0 auto;
     margin-top: 10px;
     border-radius: 10px;
-    padding: 20px 50px;
-
+    padding: 10px 20px;
 }
 
 .graderListBox {
@@ -30,14 +29,13 @@ h1.graderh1 {
     font-family: 'Bubblegum Sans', cursive;
 }
 
-
-h1.gListh1 {
+h2.gListh1 {
     background-color: #769eda;
     text-align: center;
     margin: 0 auto;
-    width: 70%;
-    border-radius: 30px;
-    padding: 5px;
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
     color: #e3d02e;
 }
 
@@ -45,7 +43,7 @@ img.graderIMG {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 40%;
 }
 
 .gradeThisBtn {
@@ -55,15 +53,15 @@ img.graderIMG {
 
 .gradeListItem {
     background-color: transparent !important;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     border: none !important;
+    border-radius: 10px !important;
 }
 
 .gradeCardMain {
     width: 100%;
     border: none !important;
-    display: flex;
-    justify-content: center;
+    border-radius: 10px !important;
 }
 
 .gradeCardBody {
@@ -71,15 +69,16 @@ img.graderIMG {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
 .gradeCardHead {
     background-color:#769eda !important;
     color: #e4d02e;
+    border-radius: 10px 10px 0 0 !important;
 }
 
 .gradeCardFoot {
     background-color:#769eda !important;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 0 0 10px 10px!important;
 }
 
 

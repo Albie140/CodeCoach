@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Learner.css';
 import ProgressBar from "../ProgressBar"
-
 import lessons from './lessonPlan.json';
 import LearnerGradedAssignment from './LearnerGradedAssignment';
 
@@ -23,15 +22,21 @@ function LearnerPage(props) {
           👋 Hello there, {props.name}!
         </h1>
 
-        <div>
-          <h2>Graded Assignment: </h2>
+// <<<<<<< SeyBranch
+//         <div className="learnerGradeDiv">
+//           <h2 className="learnh2">Recently Graded:</h2>
+
+// =======
+//         <div>
+//           <h2>Graded Assignment: </h2>
+// >>>>>>> main
           <LearnerGradedAssignment />
 
         </div>
 
 
-        <div className="container-fluid LearnerProgBar">
-          <h2 className="font">Your Progress Bar: </h2>
+        <div className="LearnerProgBar">
+          <h2 className="progBarh2">Your Progress: </h2>
 
          <ProgressBar />
 

@@ -19,7 +19,7 @@ class LearnerAssignment extends Component {
 
                     <h1 className="lessonHeadh1">Lessons: </h1>
 
-                    <Row>
+                    <Row className="lessonPlanRow">
                         {this.state.lessons.map(data =>
                             <LearnerLessonplan
                                 key={data.id}

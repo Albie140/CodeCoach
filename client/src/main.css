@@ -16,12 +16,14 @@ body {
 }
 
 /* Set up for mobile responsive-ness */
-img { max-width: 100%; height: auto; }
-html { font-size:100%; }
+/* img { max-width: 100%; height: auto; }
+html { font-size:100%; } */
 
-@media (min-width:540px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.2rem;} } 
-@media (min-width:1100px) { body {font-size:1.5rem;} }
+
+@media (min-width:340px) { body {font-size:100%;} img { max-width: 100%; height: auto; } } 
+@media (min-width:540px) { body {font-size:100%;} img { max-width: 100%; height: auto; } } 
+@media (min-width:960px) { body {font-size:100%;} img { max-width: 100%; height: auto; } } 
+@media (min-width:1100px) { body {font-size:100%;} img { max-width: 100%; height: auto; } }
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
@@ -45,4 +47,18 @@ html { font-size:100%; }
     img[data-src-800px] {
         content: attr(data-src-800px, url);
     }
+} 
+
+.divForGrading {
+    margin: 5px;
+    padding: 20px;
+    background-color: #6b77e1;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+h2.gradePageh2 {
+    padding-top: 50px;
+    font-family: 'Bubblegum Sans', cursive;
+    color: #e4d02e;
 }
