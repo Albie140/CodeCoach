@@ -8,10 +8,13 @@ function GraderPage(props) {
   useEffect(() => {
     API.getAllUngradedPosts("ungraded")
     .then(postData => {
+      console.log(`@@@@@@@@@@`);
       console.log(postData.data);
     })
     .catch(err => console.log(err));
   }, []);
+
+
 
   return (
     <div>
