@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import LearnerLessonplan from "../components/LearnerPage/LearnerLessonplan.js";
 import lessons from '../lessonPlan.json';
 import API from "../utils/API";
+import LearnerInputBox from "../components/LearnerPage/components/LearnerInputBox"
 
 class LearnerAssignment extends Component {
     state = {
@@ -58,7 +59,7 @@ class LearnerAssignment extends Component {
 
                 <div className="container-fluid lessonsMainDiv">
 
-                    <h1 className="lessonHeadh1">Lessons: </h1>
+                    <h1 className="lessonHeadh1">Lessons</h1>
 
                     <Row className="lessonPlanRow">
                         {this.state.lessons.map(data =>
@@ -72,8 +73,12 @@ class LearnerAssignment extends Component {
                     </Row>
                 </div>
 
-                <button onClick={this.onClickTest}>Test Confirm</button>
+                {/* <button onClick={this.onClickTest}>Test Confirm</button> */}
 
+                <div className="submitWorkDiv">
+                    <h1 className="submitWorkh1">Submit your work!</h1>
+                    <LearnerInputBox />
+                </div>
             </>
         );
 

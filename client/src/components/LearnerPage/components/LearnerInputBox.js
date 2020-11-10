@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import "../Learner.css"
-import { Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import API from "../../../utils/API";
 
 function LearnerInputBox(props) {
-    const [assignmentNumber, setAssignmentNumber] = useState("1");
+    const [assignment, setAssignment] = useState("Visual Studio Code & Github");
     const [link, setLink] = useState("No link / left blank");
     const [userComments, setUserComments] = useState("No comments / left blank");
 
@@ -34,7 +34,7 @@ function LearnerInputBox(props) {
         event.preventDefault();
 
         // console.log("Submitted!");
-        // console.log("title: " + assignmentNumber);
+        // console.log("title: " + assignment);
         // console.log("user: " + props.userName);
         // console.log("grader: " + "noGrader");
         // console.log("userLink: " + link);
@@ -42,19 +42,22 @@ function LearnerInputBox(props) {
         // console.log("graderComments: " + "noGraderComments");
         // console.log("grade: " + "ungraded");
 
-        API.savePost({
-            title: assignmentNumber,
-            user: props.userName,
-            grader: "noGrader",
-            userLink: link,
-            userComments: userComments,
-            graderComments: "noGraderComments",
-            grade: "ungraded"
-        })
-            .then(postData => {
-                console.log(postData.data);
-            })
-            .catch(err => console.log(err));   
+        console.log("props.userName");
+        console.log(props.userName);
+
+        // API.savePost({
+        //     title: assignment,
+        //     user: props.userName,
+        //     grader: "noGrader",
+        //     userLink: link,
+        //     userComments: userComments,
+        //     graderComments: "noGraderComments",
+        //     grade: "ungraded"
+        // })
+        //     .then(postData => {
+        //         console.log(postData.data);
+        //     })
+        //     .catch(err => console.log(err));   
     }
 
     return (
@@ -62,17 +65,17 @@ function LearnerInputBox(props) {
             <FormGroup>
                 <Label for="exampleSelect">Assignment Number</Label>
 
-                <Input type="select" name="select" id="exampleSelect" onChange={e => setAssignmentNumber(e.target.value)}>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
+                <Input type="select" name="select" id="exampleSelect" onChange={e => setAssignment(e.target.value)}>
+                    <option>Visual Studio Code & Github</option>
+                    <option>HTML Basics</option>
+                    <option>HTML Classes and IDs</option>
+                    <option>CSS Basics</option>
+                    <option>CSS Layouts</option>
+                    <option>Javascript Basics</option>
+                    <option>avascript Basic Conditions</option>
+                    <option>Javascript Arrays and Objects</option>
+                    <option>Javascript For Loops</option>
+                    <option>Create a Single Page App</option>
                 </Input>
             </FormGroup>
 
@@ -93,7 +96,7 @@ function LearnerInputBox(props) {
             </FormGroup>
 
             <FormGroup>
-                <button onClick={submitAssignment}> SUBMIT </button>
+                <Button className="submitWorkBtn" onClick={submitAssignment}> SUBMIT </Button>
             </FormGroup>
 
 

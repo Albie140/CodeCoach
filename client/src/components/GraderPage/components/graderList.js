@@ -30,7 +30,9 @@ function GraderList() {
             <ListGroup className="graderListGroup">
                 {codersToGrade.map((data) => {
                     return (
-                    <ListGroupItem key={data._id} className="gradeListItem">
+                    <ListGroupItem 
+                    className="gradeListItem"
+                    key={data._id}>
                         <GraderCard
                             key={data._id}
                             id={data._id}

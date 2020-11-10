@@ -36,7 +36,7 @@ const LearnerLessonplan = (props) => {
 
           <CardText>Resource to help:</CardText>
 
-          <a href="https://www.w3schools.com/" target="_blank"><Button className="lessonRssBtn">Click Here!</Button></a>
+          <Button className="lessonRssBtn"><a className="lessonRssLink" href="https://www.w3schools.com/" target="_blank">Click Here!</a></Button>
 
         </Card>
       </Col>
