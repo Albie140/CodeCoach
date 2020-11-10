@@ -1,5 +1,36 @@
 h1.learnerh1 {
     font-family: 'Bubblegum Sans', cursive;
+    background-image: linear-gradient(to right top, #e06161, #e06486, #d36fa8, #bc7ec3, #9e8dd4, #7a9ee5, #4cadeb, #00bae6, #00cbd1, #04d6a0, #8cd962, #e4d02e);
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 10px;
+    color: #e3d02e;
+}
+
+div.learnerGradeDiv {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #6b77e1;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+h2.learnh2 {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #e3d02e;
+}
+
+div.learnerAssignBox {
+    margin-left: 20px;
+}
+
+.assignComment {
+    margin-left: 30px;
+    font-style: italic;
 }
 
 h1.lessonHeadh1 {
@@ -10,12 +41,19 @@ h1.lessonHeadh1 {
 
 .LearnerProgBar {
     width: 70%;
-    margin-top: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-bottom: 50px;
 }
 
 .lessonsMainDiv {
     width: 80%;
     margin: 10px;
+}
+
+.lessonPlanRow {
+    margin-left: 30px;
+    padding-left: 30px;
 }
 
 .lessonCard { 
@@ -24,24 +62,18 @@ h1.lessonHeadh1 {
     background-color: #dcc5c5 !important; 
 }
 
-.learnerAssignBox {
-    background-color: #769eda;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    border: dotted 2px white;
-
-}
-
-.gradedHeader {
-    margin-top: 10px;
-}
-
 .lessonBtn {
     background-color: #e4d02e !important;
     color: black !important;
 }
 
-.assignComment {
-    margin-left: 20px;
+img.learnerIMG {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+h2.progBarh2 {
+    font-family: 'Bubblegum Sans', cursive;
 }
