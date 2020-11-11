@@ -4,11 +4,12 @@ import { ListGroup, ListGroupItem } from 'reactstrap';
 import API from "../../../utils/API"
 
 import GraderCard from './graderCard'
+import { PromiseProvider } from "mongoose";
 
 // NEED TO PASS PROPS OF LEARNER SUBMITTED WORK
 // POSTED TO THE DATABASE
 
-function GraderList() {
+function GraderList(props) {
     const [codersToGrade, setCodersToGrade] = useState([])
 
     useEffect(() => {
@@ -43,6 +44,8 @@ function GraderList() {
                             user={data.user}
                             userComments={data.userComments}
                             userLink={data.userLink}
+                            currentLoggedInGraderUserName={props.userName}
+                            loadGrading={loadGrading}
                         />
                     </ListGroupItem>
                     );
