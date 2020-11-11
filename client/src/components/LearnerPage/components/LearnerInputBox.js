@@ -42,22 +42,22 @@ function LearnerInputBox(props) {
         // console.log("graderComments: " + "noGraderComments");
         // console.log("grade: " + "ungraded");
 
-        console.log("this.props");
-        console.log(this.props);
+        // console.log("this.props");
+        // console.log(this.props);
 
-        // API.savePost({
-        //     title: assignment,
-        //     user: props.userName,
-        //     grader: "noGrader",
-        //     userLink: link,
-        //     userComments: userComments,
-        //     graderComments: "noGraderComments",
-        //     grade: "ungraded"
-        // })
-        //     .then(postData => {
-        //         console.log(postData.data);
-        //     })
-        //     .catch(err => console.log(err));   
+        API.savePost({
+            title: assignment,
+            user: props.userName,
+            grader: "noGrader",
+            userLink: link,
+            userComments: userComments,
+            graderComments: "noGraderComments",
+            grade: "ungraded"
+        })
+            .then(postData => {
+                console.log(postData.data);
+            })
+            .catch(err => console.log(err));   
     }
 
     return (
