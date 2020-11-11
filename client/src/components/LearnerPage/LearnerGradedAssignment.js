@@ -4,10 +4,10 @@ import API from "../../utils/API";
 
 function LearnerGradedAssignment(props) {
   const [gradedInfo, setGradedInfo] = useState({
-    title: "test",
-    grader: "grader",
-    graderComments: "grader comments",
-    grade: "A"
+    title: "",
+    grader: "",
+    graderComments: "",
+    grade: ""
   })
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function LearnerGradedAssignment(props) {
         console.log(`@@@@@@@@@@@@@`)
         console.log(allData.data)
         if (allData.data[0].grade !== "ungraded") {
-          setGradedInfo(allData.data[1])
+          setGradedInfo(allData.data[0])
         }
       })
       .catch(err => console.log(err));
