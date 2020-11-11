@@ -4,7 +4,7 @@ import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import API from "../../../utils/API";
 
 function LearnerInputBox(props) {
-    const [assignmentNumber, setAssignmentNumber] = useState("1");
+    const [assignment, setAssignment] = useState("Visual Studio Code & Github");
     const [link, setLink] = useState("No link / left blank");
     const [userComments, setUserComments] = useState("No comments / left blank");
 
@@ -34,7 +34,7 @@ function LearnerInputBox(props) {
         event.preventDefault();
 
         // console.log("Submitted!");
-        // console.log("title: " + assignmentNumber);
+        // console.log("title: " + assignment);
         // console.log("user: " + props.userName);
         // console.log("grader: " + "noGrader");
         // console.log("userLink: " + link);
@@ -42,8 +42,11 @@ function LearnerInputBox(props) {
         // console.log("graderComments: " + "noGraderComments");
         // console.log("grade: " + "ungraded");
 
+        // console.log("this.props");
+        // console.log(this.props);
+
         API.savePost({
-            title: assignmentNumber,
+            title: assignment,
             user: props.userName,
             grader: "noGrader",
             userLink: link,
@@ -62,7 +65,7 @@ function LearnerInputBox(props) {
             <FormGroup>
                 <Label for="exampleSelect">Assignment Number</Label>
 
-                <Input type="select" name="select" id="exampleSelect" onChange={e => setAssignmentNumber(e.target.value)}>
+                <Input type="select" name="select" id="exampleSelect" onChange={e => setAssignment(e.target.value)}>
                     <option>Visual Studio Code & Github</option>
                     <option>HTML Basics</option>
                     <option>HTML Classes and IDs</option>
