@@ -21,12 +21,10 @@ class LearnerAssignment extends Component {
 
                     <h1 className="lessonHeadh1">Lessons: </h1>
 
-<<<<<<< HEAD
                 <h2 style={{ textAlign: "center" }}>Your homework about ((topic))</h2>
                 <h3>((Grader)) said...</h3>
                 <p className="assignComment">Any questions or comments you'd like to make to your grader?</p>
 
-=======
                     <Row>
                         {this.state.lessons.map(data =>
                             <LearnerLessonplan
@@ -38,7 +36,6 @@ class LearnerAssignment extends Component {
                             />)}
                     </Row>
                 </div>
->>>>>>> 951251a47e3d320db4d6cf5154de137ce33c068d
 
             </>
         );
