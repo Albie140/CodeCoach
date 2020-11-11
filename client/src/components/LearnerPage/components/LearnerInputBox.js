@@ -8,27 +8,51 @@ function LearnerInputBox(props) {
     const [link, setLink] = useState("No link / left blank");
     const [userComments, setUserComments] = useState("No comments / left blank");
 
-    var gradedAssignments = [];
+    // var gradedAssignments = [];
 
-    useEffect(() => {
-        API.getAllPostsByUser(props.userName)
-            .then(postData => {
+    // useEffect(() => {
+    //     API.getAllPostsByUser(props.userName)
+    //         .then(postData => {
 
-                // console.log("Here are your graded assignments!");
+    //             gradedAssignments = [];
 
-                for (let i = 0; i < postData.data.length; i++) {
-                    if (postData.data[i].grade !== "ungraded") {
-                        
-                        // console.log(postData.data[i]);
-                        gradedAssignments.push(postData.data[i])
-                    }
-                }
+    //             // console.log("Here are your graded assignments!");
 
-                console.log("Here are your graded assignments!");
-                console.log(gradedAssignments);
-            })
-            .catch(err => console.log(err));
-      }, []);
+    //             for (let i = 0; i < postData.data.length; i++) {
+    //                 if (postData.data[i].grade !== "ungraded") {
+
+    //                     // console.log(postData.data[i]);
+    //                     gradedAssignments.push(postData.data[i])
+    //                 }
+    //             }
+
+    //             console.log("Here are your graded assignments!");
+    //             console.log(gradedAssignments);
+    //         })
+    //         .catch(err => console.log(err));
+    // }, []);
+
+    // function getAllPostsAgain() {
+    //     API.getAllPostsByUser(props.userName)
+    //         .then(postData => {
+
+    //             gradedAssignments = [];
+
+    //             // console.log("Here are your graded assignments!");
+
+    //             for (let i = 0; i < postData.data.length; i++) {
+    //                 if (postData.data[i].grade !== "ungraded") {
+
+    //                     // console.log(postData.data[i]);
+    //                     gradedAssignments.push(postData.data[i])
+    //                 }
+    //             }
+
+    //             console.log("Here are your graded assignments!");
+    //             console.log(gradedAssignments);
+    //         })
+    //         .catch(err => console.log(err));
+    // }
 
     function submitAssignment(event) {
         event.preventDefault();
@@ -56,8 +80,9 @@ function LearnerInputBox(props) {
         })
             .then(postData => {
                 console.log(postData.data);
+                // getAllPostsAgain();
             })
-            .catch(err => console.log(err));   
+            .catch(err => console.log(err));
     }
 
     return (

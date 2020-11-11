@@ -50,6 +50,7 @@ class Dashboard extends Component {
       pagetoLoad = <GraderPage
                     id={user.id}
                     name={user.name.split(" ")[0]}
+                    userName={user.name}
                  />
     }
 

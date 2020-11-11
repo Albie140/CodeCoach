@@ -37,7 +37,7 @@ function GraderPage(props) {
     API.updatePost("5faaccde20ac380a90208486", {
       title: ungradedAssignments[0].title,
       user: ungradedAssignments[0].user,
-      grader: props.name,
+      grader: props.userName,
       userLink: ungradedAssignments[0].userLink,
       userComments: ungradedAssignments[0].userComments,
       graderComments: graderComments,

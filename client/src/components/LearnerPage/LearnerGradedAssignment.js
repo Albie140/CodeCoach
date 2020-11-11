@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import "./Learner.css"
 
 function LearnerGradedAssignment() {
+
     return (
 
       <div className="learnerAssignBox">
