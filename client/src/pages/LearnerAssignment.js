@@ -63,15 +63,7 @@ class LearnerAssignment extends Component {
 
                     <h1 className="lessonHeadh1">Lessons</h1>
 
-<<<<<<< HEAD
-                <h2 style={{ textAlign: "center" }}>Your homework about ((topic))</h2>
-                <h3>((Grader)) said...</h3>
-                <p className="assignComment">Any questions or comments you'd like to make to your grader?</p>
-
-                    <Row>
-=======
                     <Row className="lessonPlanRow">
->>>>>>> af3b272ff78ea364bb25edeeb26110b0e12e1086
                         {this.state.lessons.map(data =>
                             <LearnerLessonplan
                                 key={data.id}

@@ -1,47 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "../components/Navbar/Navbar";
-<<<<<<< HEAD
-import {  Button, Form, FormGroup, CardTitle, Input, Label, CardText, Col } from 'reactstrap';
-=======
 import { Container, Row, Col } from 'reactstrap';
->>>>>>> af3b272ff78ea364bb25edeeb26110b0e12e1086
 
 class SavedtoGrade extends Component {
 
   render() {
     return (
-<<<<<<< HEAD
-          <>
-        <Navbar />
-        <div>
-              <div className="toGrade">
-                <h1>{this.props.title}</h1>
-                <p><span>{this.props.description}</span></p>
-                <p><span>{this.props.instructions}</span></p>
-                </div>
-                <Form>
-               <FormGroup>
-                <Label for="githubUrl">Github URL...</Label>
-                <Input type="url" name="githubURL" id="githubURL" placeholder="Github URL..." />
-
-                <p className="graderComment">Grader comment's</p>
-
-                <FormGroup>
-                  <Label for="exampleText">Text Area</Label>
-                  <Input type="textarea" name="text" id="exampleText" />
-                </FormGroup>
-                <Button>Submit</Button>
-                </FormGroup>
-
-                </Form>
-             </div>
-              
-          </>
-        );
-      };
-      };
-
-=======
       <>
       <Navbar />
 
@@ -63,6 +27,5 @@ class SavedtoGrade extends Component {
     );
   };
   };
->>>>>>> af3b272ff78ea364bb25edeeb26110b0e12e1086
   
   export default SavedtoGrade; 
