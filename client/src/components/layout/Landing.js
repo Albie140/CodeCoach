@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Button, Container, Jumbotron } from 'reactstrap';
+import { Container, Jumbotron } from 'reactstrap';
 import './Landing.css';
 
 
@@ -10,28 +10,30 @@ class Landing extends Component {
       <Container fluid={true}>
 
         <Jumbotron className="jumboBanner">
-          <h1>
-            <i className="fas fa-laptop-code"></i> CodeCoach!
+          <h1 className="h1jumboBanner">
+            <i className="fas fa-laptop-code"></i> Code Coach
           </h1>
+          <hr />
           <h5 className="h5style">
             A place for learners and coders alike. 
-            <br />
             Come see it for yourself!
           </h5>
-          <hr />
+         
         </Jumbotron>
 
-        <Container className="toRouteBtns">
+        <div className="toRouteBtns">
+
           <Link to="/register">
-            <Button className="registerBtn">
+            <button className="registerBtn">
               Register
-             </Button></Link>
+             </button></Link>
        
           <Link to="/login">
-            <Button className="logInBtn">
+            <button className="logInBtn">
               Log In
-            </Button></Link>
-        </Container>
+            </button></Link>
+
+        </div>
 
       </Container>
     );

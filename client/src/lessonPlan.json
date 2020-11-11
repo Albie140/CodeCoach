@@ -1,53 +1,62 @@
 [
     {
-        "id": 1,
-        "name": "Assignment 1",
-        "description": "Visual Studio Code & Github"
+    "id": 1,
+    "name": "Assignment 1",
+    "description": "Visual Studio Code & Github",
+    "instructions": "In order to work on and submit your assignments, you will need to download & install Visual Studio Code and sign up for a Github account. Visual Studio Code is a free source-code editor made by Microsoft for Windows, Linux and macOS. You will be writing all your assignment code in Visual Studio Code. Github provides hosting for software development and version control using Git. You will be deploying all your assignments to Github, then submit your assignments by sharing the url link to you a link via. For this assignment, research how to Deploy to Github and deploy your first code. You can use pre-written code, the main goal is to get adjusted to Github."
     },
     {
-        "id": 2,
-        "name": "Assignment 2",
-        "description": "HTML Basics"
+    "id": 2,
+    "name": "Assignment 2",
+    "description": "HTML Basics",
+    "instructions": "HTML is the standard markup language of Web pages. Essentially, HTML describes the structure of a Web page. HTML is made up of elements which are defined by a start tag, some content, and an end tag. For this assignment, you will be create a page sharing a food recipe for any meal of your choosing. You must include a page title, headers, lists, a video and images for this assignment."
     },
     {
-        "id": 3,
-        "name": "Assignment 3",
-        "description": "HTML Classes and IDs"
+    "id": 3,
+    "name": "Assignment 3",
+    "description": "HTML Classes and IDs",
+    "instructions": "The HTML class attribute is used to specify a class for an HTML element. Multiple HTML elements can share the same class.The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document. For this assignment, you will take your food recipe code from Assignment 2 and add classes and ids to your existing HTML."
     },
     {
-        "id": 4,
-        "name": "Assignment 4",
-        "description": "CSS Basics"
+    "id": 4,
+    "name": "Assignment 4",
+    "description": "CSS Basics",
+    "instructions": "CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed and essential adds style and design to your website. It can control the layout of multiple web pages all at once. For this assignment, use your updated recipe HTML from Assignment 3 and create a style.css file. In this file, add a background color, font styling, shadow to your image, and a page border to your recipe page."
     },
     {
-        "id": 5,
-        "name": "Assignment 5",
-        "description": "CSS Layouts"
+    "id": 5,
+    "name": "Assignment 5",
+    "description": "CSS Layouts",
+    "instructions": "A website is often divided into headers, menus, content and a footer. For this assignment, using a style.css sheet and your own HTML, create a fan page for your favorite band that has a header, menu, content, and footer."
     },
     {
-        "id": 6,
-        "name": "Assignment 6",
-        "description": "Javascript Basics"
+    "id": 6,
+    "name": "Assignment 6",
+    "description": "Javascript Basics",
+    "instructions": "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web and adds functionality to your applications. For this assignment, create a button using HTML and CSS and use basic JavaScript to get the button to alert 'you've clicked me!'."
     },
     {
-        "id": 9,
-        "name": "Assignment 7",
-        "description": "Javascript Basics Conditions"
+    "id": 9,
+    "name": "Assignment 7",
+    "description": "Javascript Basics Conditions",
+    "instructions": "Conditional statements are used to perform different actions based on different conditions. Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this. Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false. For this assignment, using alerts, build conditional statements to allow a user to eat ice cream, otherwise skip having dessert."
     },
     {
-        "id": 7,
-        "name": "Assignment 8",
-        "description": "Javascript Arrays and Objects"
+    "id": 7,
+    "name": "Assignment 8",
+    "description": "Javascript Arrays and Objects",
+    "instructions": "JavaScript arrays are used to store multiple values in a single variable. Objects are variables, but can contain many values. For this assignment, create an object describing a dog and an array of different dog breeds to select from."
     },
     {
-        "id": 8,
-        "name": "Assignment 9",
-        "description": "Javascript Loop For"
+    "id": 8,
+    "name": "Assignment 9",
+    "description": "Javascript Loop For",
+    "instructions": "Loops can execute a block of code a number of times. Research for loops and create an array and run through each and every element of the array without using any counters."
     },
     {
-        "id": 10,
-        "name": "Assignment 10",
-        "description": "Create a Single Page Application"
-
+    "id": 10,
+    "name": "Assignment 10",
+    "description": "Create a Single Page App",
+    "instructions": "For this assignment, you will be using everything you've learned thus far! Using HTML, CSS, and JavaScript, create an single page application of your choosing. You must input every element learned in this course, including conditionals and for loops."
     }
-]
+    ]

@@ -21,7 +21,8 @@ class Dashboard extends Component {
   componentDidMount() {
     API.getUserById(this.props.auth.user.id)
       .then(postData => {
-        console.log(postData.data);
+        // console.log("postData.data");
+        // console.log(postData.data);
         if (postData.data.role === "Learner") {
           this.setState({isLearner: true});
         }
@@ -43,6 +44,7 @@ class Dashboard extends Component {
       pagetoLoad = <LearnerPage
                     id={user.id}
                     name={user.name.split(" ")[0]}
+                    userName={user.name}
                 />
     } else {
       pagetoLoad = <GraderPage
@@ -51,8 +53,8 @@ class Dashboard extends Component {
                  />
     }
 
-    console.log("this.props");
-    console.log(this.props);
+    // console.log("this.props");
+    // console.log(this.props);
 
     return (
       <>
