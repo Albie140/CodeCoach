@@ -8,27 +8,27 @@ function LearnerInputBox(props) {
     const [link, setLink] = useState("No link / left blank");
     const [userComments, setUserComments] = useState("No comments / left blank");
 
-    var gradedAssignments = [];
+    // var gradedAssignments = [];
 
-    useEffect(() => {
-        API.getAllPostsByUser(props.userName)
-            .then(postData => {
+    // useEffect(() => {
+    //     API.getAllPostsByUser(props.userName)
+    //         .then(postData => {
 
-                // console.log("Here are your graded assignments!");
+    //             // console.log("Here are your graded assignments!");
 
-                for (let i = 0; i < postData.data.length; i++) {
-                    if (postData.data[i].grade !== "ungraded") {
+    //             for (let i = 0; i < postData.data.length; i++) {
+    //                 if (postData.data[i].grade !== "ungraded") {
                         
-                        // console.log(postData.data[i]);
-                        gradedAssignments.push(postData.data[i])
-                    }
-                }
+    //                     // console.log(postData.data[i]);
+    //                     gradedAssignments.push(postData.data[i])
+    //                 }
+    //             }
 
-                console.log("Here are your graded assignments!");
-                console.log(gradedAssignments);
-            })
-            .catch(err => console.log(err));
-      }, []);
+    //             console.log("Here are your graded assignments!");
+    //             console.log(gradedAssignments);
+    //         })
+    //         .catch(err => console.log(err));
+    //   }, []);
 
     function submitAssignment(event) {
         event.preventDefault();
