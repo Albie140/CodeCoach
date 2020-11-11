@@ -42,8 +42,8 @@ function LearnerInputBox(props) {
         // console.log("graderComments: " + "noGraderComments");
         // console.log("grade: " + "ungraded");
 
-        console.log("props.userName");
-        console.log(props.userName);
+        console.log("this.props");
+        console.log(this.props);
 
         // API.savePost({
         //     title: assignment,
