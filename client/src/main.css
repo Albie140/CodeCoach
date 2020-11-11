@@ -1,5 +1,6 @@
 body {
     background-color: rgb(228, 222, 160);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
   
 /* Scrollbar styling */
@@ -14,11 +15,6 @@ body {
     border-radius: 20px;
     border: 2px solid transparent;
 }
-
-/* Set up for mobile responsive-ness */
-/* img { max-width: 100%; height: auto; }
-html { font-size:100%; } */
-
 
 @media (max-width:340px) { * {font-size:70%;} img { max-width: 40%; height: auto; } } 
 @media (min-width:540px) { body {font-size:100%;} img { max-width: 100%; height: auto; } } 

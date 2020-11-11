@@ -4,70 +4,12 @@ import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import API from "../../../utils/API";
 
 function LearnerInputBox(props) {
-    const [assignment, setAssignment] = useState("Visual Studio Code & Github");
+    const [assignment, setAssignment] = useState("1-Visual Studio Code & Github");
     const [link, setLink] = useState("yourprofile.github.com/repolink");
     const [userComments, setUserComments] = useState("");
 
-    // var gradedAssignments = [];
-
-    // useEffect(() => {
-    //     API.getAllPostsByUser(props.userName)
-    //         .then(postData => {
-
-    //             gradedAssignments = [];
-
-    //             // console.log("Here are your graded assignments!");
-
-    //             for (let i = 0; i < postData.data.length; i++) {
-    //                 if (postData.data[i].grade !== "ungraded") {
-
-    //                     // console.log(postData.data[i]);
-    //                     gradedAssignments.push(postData.data[i])
-    //                 }
-    //             }
-
-    //             console.log("Here are your graded assignments!");
-    //             console.log(gradedAssignments);
-    //         })
-    //         .catch(err => console.log(err));
-    // }, []);
-
-    // function getAllPostsAgain() {
-    //     API.getAllPostsByUser(props.userName)
-    //         .then(postData => {
-
-    //             gradedAssignments = [];
-
-    //             // console.log("Here are your graded assignments!");
-
-    //             for (let i = 0; i < postData.data.length; i++) {
-    //                 if (postData.data[i].grade !== "ungraded") {
-
-    //                     // console.log(postData.data[i]);
-    //                     gradedAssignments.push(postData.data[i])
-    //                 }
-    //             }
-
-    //             console.log("Here are your graded assignments!");
-    //             console.log(gradedAssignments);
-    //         })
-    //         .catch(err => console.log(err));
-    // }
-
     function submitAssignment(event) {
         event.preventDefault();
-
-        // console.log("Submitted!");
-        // console.log("title: " + assignment);
-        // console.log("user: " + props.userName);
-        // console.log("grader: " + "noGrader");
-        // console.log("userLink: " + link);
-        // console.log("userComments: " + userComments);
-        // console.log("graderComments: " + "noGraderComments");
-        // console.log("grade: " + "ungraded");
-
-        // console.log("this.props");
-        // console.log(this.props);
 
         API.savePost({
             title: assignment,
@@ -81,7 +23,7 @@ function LearnerInputBox(props) {
             .then(postData => {
                 console.log(postData.data);
                 // getAllPostsAgain();
-                setAssignment("Visual Studio Code & Github")
+                setAssignment("1-Visual Studio Code & Github")
                 setLink("yourprofile.github.com/repolink")
                 setUserComments("")
             })

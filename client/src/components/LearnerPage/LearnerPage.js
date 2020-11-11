@@ -34,6 +34,10 @@ function LearnerPage(props) {
 
           <ProgressBar />
 
+          <h6 style={{textAlign:"center"}}>
+          3 ouf of 10 lessons completed!
+          </h6>
+
         </div>
 
         <div className="submitWorkDiv">
