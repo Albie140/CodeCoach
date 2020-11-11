@@ -26,7 +26,8 @@ function LearnerPage(props) {
         <div className="learnerGradeDiv">
           <h2 className="learnh2">Recently reviewed code:</h2>
           
-          <LearnerGradedAssignment />
+          <LearnerGradedAssignment 
+          userName={props.userName}/>
         </div>
         <div className="LearnerProgBar">
           <h2 className="progBarh2">Your Progress: </h2>

@@ -31,6 +31,7 @@ div.learnerAssignBox {
 .assignComment {
     margin-left: 30px;
     font-style: italic;
+    padding-left: 10px;
 }
 
 h1.lessonHeadh1 {
@@ -66,7 +67,7 @@ img.learnerIMG {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 35%;
+    width: 35% !important;
 }
 
 h2.progBarh2 {
@@ -77,7 +78,7 @@ img.lessonModalIMG {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 50% !important;
 }
 
 .lessonCardName {
@@ -132,4 +133,9 @@ h1.submitWorkh1 {
 .submitWorkBtn {
     margin: 0 auto;
     background-color: #e06161 !important;
+}
+
+.gradeOnLearnerDash {
+    font-family: 'Bubblegum Sans', cursive;
+    color: #e3d02e;
 }
