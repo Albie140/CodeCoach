@@ -35,6 +35,11 @@ function LearnerPage(props) {
 
         </div>
 
+        <div className="submitWorkDiv">
+                    <h1 className="submitWorkh1">Submit your work!</h1>
+                    <LearnerInputBox 
+                    userName={props.userName}/>
+                </div>
       </div>
     </div>
   );
