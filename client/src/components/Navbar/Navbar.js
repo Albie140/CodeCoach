@@ -44,9 +44,9 @@ class Dashboard extends Component {
             <a href="/lassignments"><button className="navbtn">Assignments</button></a>
           </NavItem>
 
-          <NavItem>
+          {/* <NavItem>
             <a href="/ltimeline"><button className="navbtn">Timeline</button></a>
-          </NavItem>
+          </NavItem> */}
         </>
     } else {
       navToDisplay =
@@ -55,9 +55,9 @@ class Dashboard extends Component {
             <a href="/gdashboard"><button className="navbtn">Dashboard</button></a>
           </NavItem>
 
-          <NavItem>
+          {/* <NavItem>
             <a href="/savedtograde"> <button className="navbtn">Saved to Grade</button></a>
-          </NavItem>
+          </NavItem> */}
         </>
     }
 

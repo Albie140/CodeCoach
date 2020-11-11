@@ -32,25 +32,25 @@
     {
     "id": 6,
     "name": "Assignment 6",
-    "description": "Javascript Basics",
+    "description": "JavaScript Basics",
     "instructions": "JavaScript is the world's most popular programming language. JavaScript is the programming language of the Web and adds functionality to your applications. For this assignment, create a button using HTML and CSS and use basic JavaScript to get the button to alert 'you've clicked me!'."
     },
     {
     "id": 9,
     "name": "Assignment 7",
-    "description": "Javascript Basics Conditions",
+    "description": "JavaScript Basics Conditions",
     "instructions": "Conditional statements are used to perform different actions based on different conditions. Very often when you write code, you want to perform different actions for different decisions. You can use conditional statements in your code to do this. Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed, if the same condition is false. Use else if to specify a new condition to test, if the first condition is false. For this assignment, using alerts, build conditional statements to allow a user to eat ice cream, otherwise skip having dessert."
     },
     {
     "id": 7,
     "name": "Assignment 8",
-    "description": "Javascript Arrays and Objects",
+    "description": "JavaScript Arrays and Objects",
     "instructions": "JavaScript arrays are used to store multiple values in a single variable. Objects are variables, but can contain many values. For this assignment, create an object describing a dog and an array of different dog breeds to select from."
     },
     {
     "id": 8,
     "name": "Assignment 9",
-    "description": "Javascript Loop For",
+    "description": "JavaScript For Loop",
     "instructions": "Loops can execute a block of code a number of times. Research for loops and create an array and run through each and every element of the array without using any counters."
     },
     {
