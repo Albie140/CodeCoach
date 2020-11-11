@@ -5,47 +5,6 @@ import { Form, FormGroup, Label, Input } from 'reactstrap';
 import API from "../../utils/API";
 
 function GraderPage(props) {
-  const [ungradedAssignments, setUngradedAssignments] = useState();
-  const [grade, setGrade] = useState("A");
-  const [graderComments, setGraderComments] = useState("");
-
-  useEffect(() => {
-    API.getAllUngradedPosts("ungraded")
-      .then(postData => {
-        console.log(`@@@@@@@@@@`);
-        console.log(postData.data);
-        setUngradedAssignments(postData.data)
-      })
-      .catch(err => console.log(err));
-  }, []);
-
-  function submitGrade(event) {
-    event.preventDefault();
-
-    console.log("Submitted!");
-    // console.log("ungradedAssignments");
-    // console.log(ungradedAssignments);
-
-    // console.log("title: " + ungradedAssignments[0].title);
-    // console.log("user: " + ungradedAssignments[0].user);
-    // console.log("grader: " + props.name);
-    // console.log("userLink: " + ungradedAssignments[0].userLink);
-    // console.log("userComments: " + ungradedAssignments[0].userComments);
-    // console.log("graderComments: " + graderComments);
-    // console.log("grade: " + grade);
-
-    API.updatePost("5faaccde20ac380a90208486", {
-      title: ungradedAssignments[0].title,
-      user: ungradedAssignments[0].user,
-      grader: props.userName,
-      userLink: ungradedAssignments[0].userLink,
-      userComments: ungradedAssignments[0].userComments,
-      graderComments: graderComments,
-      grade: grade
-    })
-      .catch(err => console.log(err));
-  }
-
   return (
     <div>
       <div className="container-fluid"> <div className="graderPageBox">
@@ -65,36 +24,9 @@ function GraderPage(props) {
 
         </div>
 
-        <GraderList />
+        <GraderList userName={props.userName} />
 
       </div>
-
-      <h1>Test!</h1>
-
-      <Form>
-        <FormGroup>
-          <Label for="exampleSelect">Grade</Label>
-
-          <Input type="select" name="select" id="exampleSelect" onChange={e => setGrade(e.target.value)}>
-            <option>A</option>
-            <option>B</option>
-            <option>C</option>
-            <option>D</option>
-            <option>F</option>
-          </Input>
-        </FormGroup>
-
-        <FormGroup>
-          <Label for="exampleText">Place any comment for the user you would like to add: </Label>
-          <Input type="textarea" name="commentforgrader" id="commentforgrader" onChange={e => setGraderComments(e.target.value)} />
-        </FormGroup>
-
-        <FormGroup>
-          <button onClick={submitGrade}> SUBMIT </button>
-        </FormGroup>
-
-
-      </Form>
 
     </div>
   );

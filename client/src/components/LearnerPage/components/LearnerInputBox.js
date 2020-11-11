@@ -5,8 +5,8 @@ import API from "../../../utils/API";
 
 function LearnerInputBox(props) {
     const [assignment, setAssignment] = useState("Visual Studio Code & Github");
-    const [link, setLink] = useState("No link / left blank");
-    const [userComments, setUserComments] = useState("No comments / left blank");
+    const [link, setLink] = useState("yourprofile.github.com/repolink");
+    const [userComments, setUserComments] = useState("");
 
     // var gradedAssignments = [];
 
@@ -81,6 +81,9 @@ function LearnerInputBox(props) {
             .then(postData => {
                 console.log(postData.data);
                 // getAllPostsAgain();
+                setAssignment("Visual Studio Code & Github")
+                setLink("yourprofile.github.com/repolink")
+                setUserComments("")
             })
             .catch(err => console.log(err));
     }
@@ -90,7 +93,7 @@ function LearnerInputBox(props) {
             <FormGroup>
                 <Label for="exampleSelect">Assignment Number</Label>
 
-                <Input type="select" name="select" id="exampleSelect" onChange={e => setAssignment(e.target.value)}>
+                <Input type="select" name="select" id="exampleSelect" value={assignment} onChange={e => setAssignment(e.target.value)}>
                     <option>Visual Studio Code & Github</option>
                     <option>HTML Basics</option>
                     <option>HTML Classes and IDs</option>
@@ -111,13 +114,14 @@ function LearnerInputBox(props) {
                     name="repoLink"
                     id="repoLink"
                     placeholder="yourprofile.github.com/repolink"
+                    value={link}
                     onChange={e => setLink(e.target.value)}
                 />
             </FormGroup>
 
             <FormGroup>
                 <Label for="exampleText">Place any comment for the grader you would like to add: </Label>
-                <Input type="textarea" name="commentforgrader" id="commentforgrader" onChange={e => setUserComments(e.target.value)} />
+                <Input type="textarea" name="commentforgrader" id="commentforgrader" value={userComments} onChange={e => setUserComments(e.target.value)} />
             </FormGroup>
 
             <FormGroup>
