@@ -1,5 +1,5 @@
 # 👨‍💻 Code Coach
-[CLICK HERE FOR LIVE HEROKU APPLICATION]()
+[CLICK HERE FOR LIVE HEROKU APPLICATION](http://codecoach0.herokuapp.com/)
 
 ## Table of Contents
 * [Screenshots](#screenshots)
@@ -57,20 +57,26 @@ Use the live application via the Heroku link provided above
 ```
 ## Demo
 ![demo]()
+
 ## Built With
 * Heroku
 * React
 * JSX
 * MongoDB
-* Auth0 
 * Express
 * Node
-* ORM
-* JSON
+* Passport
+* Bcrypt
+* JSON Webtoken
 * ReactStrap
+* React redux
+* Bootstrap
+* GoogleFonts - fonts
+* FontAwesomt - icons
+* iconfinder.com - icons
+* RealFaviconGenerator.net - favicon
 
 ## Contributors 
-
  
 Kristy Keller
 * Github: [KristyKeller](https://github.com/KristyKeller) 
@@ -86,7 +92,7 @@ Alberte Laventure
 
 Joshua Trevethan
 * Github: [JoshTrev](https://github.com/JoshTrev) 
-* Email: 
+* Email: <joshj438t@gmail.com>
 
 ## License
 

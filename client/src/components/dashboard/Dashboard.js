@@ -21,13 +21,11 @@ class Dashboard extends Component {
   componentDidMount() {
     API.getUserById(this.props.auth.user.id)
       .then(postData => {
-        // console.log("postData.data");
-        // console.log(postData.data);
         if (postData.data.role === "Learner") {
-          this.setState({isLearner: true});
+          this.setState({ isLearner: true });
         }
         if (postData.data.role === "Teacher") {
-          this.setState({isLearner: false});
+          this.setState({ isLearner: false });
         }
       })
       .catch(err => console.log(err));
@@ -35,26 +33,24 @@ class Dashboard extends Component {
 
   render() {
     const { user } = this.props.auth;
-    
+
     const isLearnerRole = user.role
 
     let pagetoLoad;
 
     if (isLearnerRole === "Learner") {
       pagetoLoad = <LearnerPage
-                    id={user.id}
-                    name={user.name.split(" ")[0]}
-                    userName={user.name}
-                />
+        id={user.id}
+        name={user.name.split(" ")[0]}
+        userName={user.name}
+      />
     } else {
       pagetoLoad = <GraderPage
-                    id={user.id}
-                    name={user.name.split(" ")[0]}
-                 />
+        id={user.id}
+        name={user.name.split(" ")[0]}
+        userName={user.name}
+      />
     }
-
-    // console.log("this.props");
-    // console.log(this.props);
 
     return (
       <>
