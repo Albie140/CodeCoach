@@ -29,8 +29,8 @@ export default {
         console.log("Saving Post")
         return axios.post("/api/post", newPost);
     },
-    updatePost: id => {
-        return axios.put("/api/post/" + id);
+    updatePost: (id, updateData) => {
+        return axios.put("/api/post/" + id, updateData);
     },
     removePost: id => {
         return axios.delete("/api/post/" + id);

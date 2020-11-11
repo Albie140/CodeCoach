@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Card, Button, CardTitle, CardText, Col, Modal, ModalBody, ModalFooter } from 'reactstrap';
 import './Learner.css'
 
-
 const LearnerLessonplan = (props) => {
   const [open, setOpen] = useState(false);
   const [focusAfterClose, setFocusAfterClose] = useState(true);

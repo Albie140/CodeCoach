@@ -133,6 +133,12 @@ h1.submitWorkh1 {
 .submitWorkBtn {
     margin: 0 auto;
     background-color: #e06161 !important;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.submitWorkBtn:hover {
+    color:  #6b77e1 !important;
+    border: 1px solid  #e06161 !important;
+    background-color: #e3d02e !important;
 }
 
 .gradeOnLearnerDash {
