@@ -44,6 +44,7 @@ class Dashboard extends Component {
       pagetoLoad = <LearnerPage
                     id={user.id}
                     name={user.name.split(" ")[0]}
+                    userName={user.name}
                 />
     } else {
       pagetoLoad = <GraderPage
