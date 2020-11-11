@@ -73,12 +73,7 @@ class LearnerAssignment extends Component {
                     </Row>
                 </div>
 
-                {/* <button onClick={this.onClickTest}>Test Confirm</button> */}
 
-                <div className="submitWorkDiv">
-                    <h1 className="submitWorkh1">Submit your work!</h1>
-                    <LearnerInputBox />
-                </div>
             </>
         );
 
