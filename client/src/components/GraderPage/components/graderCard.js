@@ -71,8 +71,6 @@ function GraderCard(props) {
 
                         <Button className="gradeThisBtn" onClick={submitGrade}>Grade This!</Button>
 
-                            <Button className="gradeThisBtn" >Grade This!</Button>
-
                         </CardText>
                     </CardFooter>
 
