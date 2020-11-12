@@ -5,7 +5,7 @@ h1.learnerh1 {
     width: 70%;
     margin: 0 auto;
     border-radius: 30px;
-    padding: 10px;
+    padding: 3%;
     color: #e3d02e;
 }
 
@@ -15,8 +15,8 @@ div.learnerGradeDiv {
     margin: 0 auto;
     background-color: #6b77e1;
     border-radius: 20px;
-    padding: 30px;
-    margin-top: 50px;
+    padding: 10%;
+    margin-top: 10%;
 }
 
 h2.learnh2 {
@@ -25,31 +25,41 @@ h2.learnh2 {
 }
 
 div.learnerAssignBox {
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 .assignComment {
-    margin-left: 30px;
+    margin-left: 10%;
+    margin-right: auto;
     font-style: italic;
-    padding-left: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 
 h1.lessonHeadh1 {
-    padding: 10px;
     font-family: 'Bubblegum Sans', cursive;
     color: #e06161;
+    background-color: #e4d02e;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 5%;
+    margin-bottom: 5%;
+    border: solid 1px #e06161
 }
 
 .LearnerProgBar {
     width: 70%;
     margin: 0 auto;
-    margin-top: 30px;
-    padding-bottom: 50px;
+    margin-top: 8%;
+    padding-bottom: 10%;
 }
 
 .lessonsMainDiv {
     width: 80%;
     margin: 10px;
+    margin-bottom: 10%;
 }
 
 .lessonPlanRow {
@@ -100,23 +110,27 @@ img.lessonModalIMG {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19) !important;
 }
 
-.lessonRssBtn {
+.lessonRssLink {
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none !important;
     background-color: #769eda !important;
     border: none !important;
+    border-radius: 6px;
     color: white !important;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
-.lessonRssLink {
-    color: white !important;
-    text-decoration: none !important;
+.lessonRssLink:hover {
+    color: black !important;
 }
 
 .submitWorkDiv {
     width: 80%;
     margin: 0 auto;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 1%;
+    margin-bottom: 10%;
     padding: 20px;
     background-color: #6b77e1;
     border-radius: 10px;
@@ -136,12 +150,30 @@ h1.submitWorkh1 {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 .submitWorkBtn:hover {
-    color:  #6b77e1 !important;
-    border: 1px solid  #e06161 !important;
-    background-color: #e3d02e !important;
+    color: black !important;
 }
 
 .gradeOnLearnerDash {
     font-family: 'Bubblegum Sans', cursive;
     color: #e3d02e;
+}
+
+.learnerStoryContainer {
+    margin-top: 5%;
+}
+
+div.learnerStory {
+    text-indent: 5%;
+    margin: 0 auto;
+    padding: 10%;
+    background-color: #769eda;
+    border-radius: 8px;
+    width: 90%;
+    margin-bottom: 5%;
+}
+
+.learnerStoryIcon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }

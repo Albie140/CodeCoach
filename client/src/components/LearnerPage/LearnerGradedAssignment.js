@@ -13,12 +13,23 @@ function LearnerGradedAssignment(props) {
   useEffect(() => {
     API.getAllPostsByUser(props.userName)
       .then(allData => {
-        console.log(`@@@@@@@@@@@@@`)
+        console.log("Getting all posts from user 'LearnerGradedAssignment.js")
         console.log(allData.data)
-
-        if (allData.data[0].grade !== "ungraded") {
-          setGradedInfo(allData.data[0])
+        var gradedAssignments = []
+        for (let i = 0; i < allData.data.length; i++){
+          if (allData.data[i].grade !== "ungraded") {
+            gradedAssignments.push(allData.data[i])
+          }
         }
+        if (gradedAssignments.length == 0){
+          gradedAssignments.push({
+            title: "",
+            grader: "",
+            graderComments: "",
+            grade: ""
+          })
+        }
+        setGradedInfo(gradedAssignments[gradedAssignments.length - 1])
       })
       .catch(err => console.log(err));
   }, []);
@@ -33,8 +44,8 @@ function LearnerGradedAssignment(props) {
       <hr />
       <center><h1 className="gradeOnLearnerDash">{gradedInfo.grade}</h1></center>
       <h4>{gradedInfo.grader} said...</h4>
-      <h4 className="assignComment">"{gradedInfo.graderComments}"
-      <br/></h4>
+      <h5 className="assignComment">"{gradedInfo.graderComments}"
+      <br/></h5>
       </>
     }
       

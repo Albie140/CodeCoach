@@ -34,7 +34,7 @@ function GraderCard(props) {
     return (
         <div>
                 <Card className="gradeCardMain">
-                    <CardHeader className="gradeCardHead" tag="h3">{props.user}</CardHeader>
+                    <CardHeader className="gradeCardHead" tag="h2">{props.user}</CardHeader>
 
                     <CardBody className="gradeCardBody">
 
@@ -43,14 +43,16 @@ function GraderCard(props) {
                             Learner Comments: {props.userComments}
                         </CardText>
 
-                    <CardText>Github Repo:
+                    <CardText>Learner Github Repo:
                     <a href={props.userLink} target="_blank"> {props.userLink}</a>
                     </CardText>
 
                     <FormGroup>
-                        <Label for="exampleSelect">Grade</Label>
+                        <Label for="exampleSelect">Grade: </Label>
 
-                        <Input type="select" name="select" id="exampleSelect" onChange={e => setGrade(e.target.value)}>
+                        <Input type="select"
+                        className="gradeOptionBox"
+                        name="select" id="exampleSelect" onChange={e => setGrade(e.target.value)}>
                             <option>A</option>
                             <option>B</option>
                             <option>C</option>

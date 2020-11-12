@@ -73,9 +73,10 @@ Use the live application via the Heroku link provided above
 * React redux
 * Bootstrap
 * GoogleFonts - fonts
-* FontAwesomt - icons
+* FontAwesome - icons
 * iconfinder.com - icons
 * RealFaviconGenerator.net - favicon
+* Base64 - image hosting
 
 ## Contributors 
  

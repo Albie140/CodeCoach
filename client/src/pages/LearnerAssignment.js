@@ -28,7 +28,7 @@ class LearnerAssignment extends Component {
 
                 <div className="container-fluid lessonsMainDiv">
 
-                    <h1 className="lessonHeadh1">Lessons</h1>
+                    <h1 className="lessonHeadh1">Coding Lesson Plan</h1>
 
                     <Row className="lessonPlanRow">
                         {this.state.lessons.map(data =>
