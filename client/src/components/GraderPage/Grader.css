@@ -52,6 +52,13 @@ img.graderIMG {
     color: #e4d02e !important;
 }
 
+.deleteThisBtn {
+    float: right;
+    color: black !important;
+    background-color: #e06161 !important;
+    margin-left: 10px !important;
+}
+
 .gradeListItem {
     background-color: transparent !important;
     border: none !important;

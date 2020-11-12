@@ -15,12 +15,17 @@ function LearnerGradedAssignment(props) {
       .then(allData => {
         console.log("Getting all posts from user 'LearnerGradedAssignment.js")
         console.log(allData.data)
+
+
         var gradedAssignments = []
+
         for (let i = 0; i < allData.data.length; i++){
           if (allData.data[i].grade !== "ungraded") {
+
             gradedAssignments.push(allData.data[i])
           }
         }
+
         if (gradedAssignments.length == 0){
           gradedAssignments.push({
             title: "",
@@ -29,7 +34,9 @@ function LearnerGradedAssignment(props) {
             grade: ""
           })
         }
+
         setGradedInfo(gradedAssignments[gradedAssignments.length - 1])
+
       })
       .catch(err => console.log(err));
   }, []);

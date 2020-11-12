@@ -4,7 +4,8 @@ import { Form, FormGroup, Label, Input, Button } from 'reactstrap';
 import API from "../../../utils/API";
 
 function LearnerInputBox(props) {
-    const [assignment, setAssignment] = useState("");
+
+    const [assignment, setAssignment] = useState("1-Visual Studio Code & Github");
     const [link, setLink] = useState("");
     const [userComments, setUserComments] = useState("");
 

@@ -6,6 +6,7 @@ import GraderCard from './graderCard'
 
 function GraderList(props) {
     const [codersToGrade, setCodersToGrade] = useState([])
+    const [deletedId, setDeletedId] = useState("")
 
     useEffect(() => {
         loadGrading();
@@ -15,7 +16,11 @@ function GraderList(props) {
         API.getAllUngradedPosts("ungraded")
             .then(postData => {
                 console.log(postData.data)
-                setCodersToGrade(postData.data)
+                let updatedData = postData.data;
+                updatedData = updatedData.filter(element => 
+                    element.id !== deletedId
+                );
+                setCodersToGrade(updatedData)
             })
             .catch(err => console.log(err));
     }
@@ -41,6 +46,7 @@ function GraderList(props) {
                             userLink={data.userLink}
                             currentLoggedInGraderUserName={props.userName}
                             loadGrading={loadGrading}
+                            setDeletedId={setDeletedId}
                         />
                     </ListGroupItem>
                     );

@@ -31,17 +31,31 @@ function GraderCard(props) {
             .catch(err => console.log(err));
     }
 
+    function deleteAssignment(event) {
+        event.preventDefault();
+
+        console.log("Deleted!");
+
+        API.removePost(props.id)
+            .then(() => {
+                props.setDeletedId(props.id)
+                props.loadGrading()
+            })
+            .catch(err => console.log(err));
+    }
+
     return (
         <div>
                 <Card className="gradeCardMain">
                     <CardHeader className="gradeCardHead" tag="h2">{props.user}</CardHeader>
 
-                    <CardBody className="gradeCardBody">
 
-                        <CardTitle tag="h5">Lesson: {props.title}</CardTitle>
-                        <CardText>
-                            Learner Comments: {props.userComments}
-                        </CardText>
+                <CardBody className="gradeCardBody">
+
+                    <CardTitle tag="h5">Lesson: {props.title}</CardTitle>
+                    <CardText>
+                        Learner Comments: {props.userComments}
+                    </CardText>
 
                     <CardText>Learner Github Repo:
                     <a href={props.userLink} target="_blank"> {props.userLink}</a>
@@ -63,7 +77,7 @@ function GraderCard(props) {
 
                     <FormGroup>
                         <Label for="exampleText">Place any comment for the user you would like to add: </Label>
-                        <Input type="textarea" name="commentforgrader" id="commentforgrader" onChange={e => setGraderComments(e.target.value)}/>
+                        <Input type="textarea" name="commentforgrader" id="commentforgrader" onChange={e => setGraderComments(e.target.value)} />
                     </FormGroup>
 
                 </CardBody>
@@ -71,12 +85,14 @@ function GraderCard(props) {
                 <CardFooter className="gradeCardFoot">
                     <CardText className="text-muted">
 
+                        <Button className="deleteThisBtn" onClick={deleteAssignment}>Delete</Button>
+
                         <Button className="gradeThisBtn" onClick={submitGrade}>Grade This!</Button>
 
-                        </CardText>
-                    </CardFooter>
+                    </CardText>
+                </CardFooter>
 
-                </Card>
+            </Card>
 
         </div>
     );
