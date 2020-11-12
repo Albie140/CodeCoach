@@ -36,6 +36,10 @@ class Dashboard extends Component {
     if (isLearnerRole === "Learner") {
       navToDisplay =
         <>
+        <NavItem>
+            <a href="/luserstory"><button className="navbtn">User Story</button></a>
+          </NavItem>
+
           <NavItem>
             <a href="/ldashboard"><button className="navbtn">Dashboard</button></a>
           </NavItem>
@@ -44,20 +48,18 @@ class Dashboard extends Component {
             <a href="/lassignments"><button className="navbtn">Assignments</button></a>
           </NavItem>
 
-          {/* <NavItem>
-            <a href="/ltimeline"><button className="navbtn">Timeline</button></a>
-          </NavItem> */}
         </>
     } else {
       navToDisplay =
         <>
+        <NavItem>
+            <a href="/guserstory"> <button className="navbtn">User Story</button></a>
+          </NavItem>
+
           <NavItem>
             <a href="/gdashboard"><button className="navbtn">Dashboard</button></a>
           </NavItem>
 
-          {/* <NavItem>
-            <a href="/savedtograde"> <button className="navbtn">Saved to Grade</button></a>
-          </NavItem> */}
         </>
     }
 

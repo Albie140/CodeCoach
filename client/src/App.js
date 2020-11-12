@@ -15,10 +15,10 @@ import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 import LearnerDashboard from "./pages/LearnerDashboard";
-import LearnerTimeline from "./pages/LearnerTimeline";
+import LearnerUserStory from "./pages/LearnerUserStory";
 import LearnerAssignment from "./pages/LearnerAssignment";
 import GraderDashboard from "./pages/GraderDashboard";
-import SavedToGrade from "./pages/SavedToGrade";
+import GraderUserStory from "./pages/GraderUserStory";
 
 
 // Check for token to keep user logged in
@@ -52,10 +52,10 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/dashboard" component={Dashboard} />
               <PrivateRoute exact path="/ldashboard" component={LearnerDashboard} />
-              <PrivateRoute exact path="/ltimeline" component={LearnerTimeline} />
+              <PrivateRoute exact path="/luserstory" component={LearnerUserStory} />
               <PrivateRoute exact path="/lassignments" component={LearnerAssignment} />
               <PrivateRoute exact path="/gdashboard" component={GraderDashboard} />
-              <PrivateRoute exact path="/savedtograde" component={SavedToGrade} />
+              <PrivateRoute exact path="/guserstory" component={GraderUserStory} />
             </Switch>
           </div>
         </Router>
