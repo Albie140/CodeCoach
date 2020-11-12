@@ -27,6 +27,19 @@
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
     }
+    .h1jumboBanner {
+        font-size: 1200% !important;
+        padding-bottom: 20% !important;
+    }
+    .h5style {
+        font-size: 500% !important;
+    }
+    .jumboBanner {
+        margin-top: 5% !important;
+        padding-top: 10% !important;
+        padding-bottom: 20% !important;
+        margin-bottom: 20% !important;
+    }
 }
 
 .logInBtn:hover, .registerBtn:hover {
@@ -35,7 +48,7 @@
 }
 
 .jumboBanner {
-    margin-top: 4% !important;
+    margin-top: 2%;
     background-image: linear-gradient(to right top, #e06161, #e06486, #d36fa8, #bc7ec3, #9e8dd4, #7a9ee5, #4cadeb, #00bae6, #00cbd1, #04d6a0, #8cd962, #e4d02e) !important;
     color: #e4d02e !important;
     font-family: 'Bubblegum Sans', cursive;
@@ -44,7 +57,7 @@
 
 h1.h1jumboBanner {
     margin-bottom: 15%;
-    font-size: 600% !important;
+    font-size: 600%;
 }
 
 .toRouteBtns {

@@ -1,14 +1,21 @@
 .signUpBox {
     padding: 20px;
-    margin: 30px;
+    margin: 0 auto;
+    margin-top: 3%;
     background-color: #e5d02e;
     color: #e06161;
-    width: 300px;
+    width: 35%;
     border-radius: 10px;
     font-family: 'Bubblegum Sans', cursive;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
+@media (max-width:700px) {
+    .signUpBox {
+        width: 75%;
+        font-size: 110%;
+    }
+}
 
 .regiLogInLink, .regiBackHomeLink {
     color: gray !important;
@@ -42,4 +49,9 @@ div.regiAcct {
 .regiSignUpBtn:hover {
     color: #e06161 !important;
     background: #e4d02e !important;
+}
+
+.red-text {
+    color:#6b77e1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

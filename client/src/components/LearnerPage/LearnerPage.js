@@ -12,8 +12,8 @@ function LearnerPage(props) {
     lessons: lessons
   });
   const [numberOfGradedAssignments, setNumberOfGradedAssignments] = useState([]);
-  const [gpaLetter, setGpaLetter] = useState("");
-  const [completedTheCourse, setCompletedTheCourse] = useState("");
+
+  const [totalGPA, setTotalGPA] = useState("")
 
   useEffect(() => {
     setLessonInfo({ lessons })
@@ -32,7 +32,6 @@ function LearnerPage(props) {
         var gradedAssignmentsTitles = [];
 
         var gpa = 0;
-        var gpaLetterGrade = "";
 
         for (let i = 0; i < allData.data.length; i++) {
           if (allData.data[i].grade !== "ungraded") {
@@ -73,54 +72,8 @@ function LearnerPage(props) {
 
         gpa = gpa / gradedAssignmentsNoDuplicates.length;
 
-        console.log("gpa");
         console.log(gpa);
-
-        if (gpa < 0.67){
-          gpaLetterGrade = "F";
-        }
-        if (gpa < 1){
-          gpaLetterGrade = "D-";
-        }
-        if (gpa < 1.33){
-          gpaLetterGrade = "D";
-        }
-        if (gpa < 1.67){
-          gpaLetterGrade = "D+";
-        }
-        if (gpa < 2){
-          gpaLetterGrade = "C-";
-        }
-        if (gpa < 2.33){
-          gpaLetterGrade = "C";
-        }
-        if (gpa < 2.67){
-          gpaLetterGrade = "C+";
-        }
-        if (gpa < 3){
-          gpaLetterGrade = "B-";
-        }
-        if (gpa < 3.33){
-          gpaLetterGrade = "B";
-        }
-        if (gpa < 3.67){
-          gpaLetterGrade = "B+";
-        }
-        if (gpa < 4){
-          gpaLetterGrade = "A-";
-        }
-        if (gpa = 4){
-          gpaLetterGrade = "A";
-        }
-
-        console.log("gpaLetterGrade");
-        console.log(gpaLetterGrade);
-
-        setGpaLetter(gpaLetterGrade);
-
-        if (gradedAssignmentsNoDuplicates.length >= 10){
-          setCompletedTheCourse("You have completed the course!")
-        }
+        setTotalGPA(gpa)
       })
       .catch(err => console.log(err));
   }, []);
@@ -129,7 +82,7 @@ function LearnerPage(props) {
     <div>
       <div className="container-fluid">
         <h1 className="learnerh1">
-          👋 Hello there, {props.name}!
+        <span role="img" aria-label="wavingEmoji">👋</span> Hello there, {props.name}!
         </h1>
 
         <div className="learnerGradeDiv">
@@ -139,13 +92,15 @@ function LearnerPage(props) {
             userName={props.userName} />
         </div>
         <div className="LearnerProgBar">
-          <h2 className="progBarh2">Your Progress: </h2>
+          <h2 className="progBarh2">Your Progress Stats: </h2>
 
           <ProgressBar userName={props.userName}/>
 
           <h6 style={{ textAlign: "center" }}>
             {numberOfGradedAssignments.length} out of 10 lessons completed!
           </h6>
+          <br/>
+          <h3 style={{ textAlign: "center" }}>Current GPA: {totalGPA}</h3>
 
         </div>
 

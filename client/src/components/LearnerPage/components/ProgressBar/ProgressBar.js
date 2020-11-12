@@ -37,11 +37,11 @@ function ProgressBar(props) {
         console.log(gradedAssignmentsNoDuplicates);
 
         for (let i = 0; i < gradedAssignmentsNoDuplicates.length; i++) {
-          newCompletedArray.push("success");
+          newCompletedArray.push("warning");
         }
 
         for (let i = 10; i > gradedAssignmentsNoDuplicates.length; i--) {
-          newCompletedArray.push("danger");
+          newCompletedArray.push("");
         }
 
         console.log("newCompletedArray");
@@ -54,8 +54,6 @@ function ProgressBar(props) {
       })
       .catch(err => console.log(err));
   }, []);
-
-
 
   return (
     <>

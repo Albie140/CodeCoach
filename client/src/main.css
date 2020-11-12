@@ -19,7 +19,7 @@ body {
 @media (max-width:400px) { * {font-size:80% !important;} img { max-width: 80%; height: auto; } } 
 @media (min-width:540px) { body {font-size:100%;} img { max-width: 100%; height: auto; } } 
 @media (min-width:960px) { body {font-size:100%;} img { max-width: 100%; height: auto; } } 
-@media (min-width:1100px) { body {font-size:100%;} img { max-width: 100%; height: auto; } }
+@media (min-width:1100px) { body {font-size:100%;} img { max-width: 40%; height: auto; } }
 
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
