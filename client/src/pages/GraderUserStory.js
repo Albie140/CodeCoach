@@ -2,13 +2,14 @@ import React, { Component } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import { Container, Row, Col } from 'reactstrap';
 
-class SavedtoGrade extends Component {
+class GraderUserStory extends Component {
   render() {
     return (
       <>
       <Navbar />
+      <p> As a professional coder, I would like to give back to the coding community. I LOVE coding and I want to share that love by helping others to love it too! I believe that those who want to learn coding should start with the basics. I want to coach beginner coders by reviewing assignments and providing detailed feedback. I will devote a few hours a week to doing this and share this opportunity with my Coding colleagues. I'm hoping they want to help too. </p>
 
-      <Container fluid={true}>
+      {/* <Container fluid={true}>
 
        <Row className="divForGrading">
          <Col xs="3">
@@ -21,10 +22,10 @@ class SavedtoGrade extends Component {
 
           </Row>
 
-      </Container>
+      </Container> */}
       </>
     );
   };
   };
   
-  export default SavedtoGrade;
+  export default GraderUserStory;
