@@ -23,10 +23,11 @@
 * [Questions](#questions)
 
 ## Screenshots 
-![screenshot1](./assets/images/)
-![screenshot2](./assets/images/)
-![screenshot3](./assets/images/)
-![screenshot4](./assets/images/)
+![screenshot1](./assets/images/screenshot1.png)
+![screenshot2](./assets/images/screenshot2.png)
+![screenshot3](./assets/images/screenshot3.png)
+![screenshot4](./assets/images/screenshot5.png)
+![screenshot4](./assets/images/screenshot6.png)
 
 ## User Story
 ```
@@ -48,7 +49,7 @@ npm i
 
 ## Usage 
 ```
-Run "npm start" to start then navigate to a browser window to localhost:3000
+Run "npm start" to start then navigate to a browser window to localhost:3001
 
 OR
                                      
@@ -56,7 +57,7 @@ Use the live application via the Heroku link provided above
 
 ```
 ## Demo
-![demo]()
+![demo](https://media.giphy.com/media/s4sVSKE6z7jSW2DeWI/giphy.gif)
 
 ## Built With
 * Heroku
