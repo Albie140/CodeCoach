@@ -17,7 +17,6 @@ h1.graderh1 {
     background-color: #e06161;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
     width: 80%;
     margin: 0 auto;
     margin-top: 10px;
@@ -44,7 +43,7 @@ img.graderIMG {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 40% !important;
 }
 
 .gradeThisBtn {
@@ -54,7 +53,6 @@ img.graderIMG {
 
 .gradeListItem {
     background-color: transparent !important;
-    /* margin: 0 auto; */
     border: none !important;
     border-radius: 10px !important;
 }

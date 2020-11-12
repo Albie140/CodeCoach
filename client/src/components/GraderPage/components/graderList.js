@@ -2,12 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../Grader.css";
 import { ListGroup, ListGroupItem } from 'reactstrap';
 import API from "../../../utils/API"
-
 import GraderCard from './graderCard'
-import { PromiseProvider } from "mongoose";
-
-// NEED TO PASS PROPS OF LEARNER SUBMITTED WORK
-// POSTED TO THE DATABASE
 
 function GraderList(props) {
     const [codersToGrade, setCodersToGrade] = useState([])

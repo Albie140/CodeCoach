@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 import LearnerLessonplan from "../components/LearnerPage/LearnerLessonplan.js";
 import lessons from '../lessonPlan.json';
 import API from "../utils/API";
-import LearnerInputBox from "../components/LearnerPage/components/LearnerInputBox"
+
 
 class LearnerAssignment extends Component {
     state = {
@@ -14,40 +14,9 @@ class LearnerAssignment extends Component {
 
     onClickTest = e => {
         e.preventDefault();
-        console.log("Test!!!")
-
-        // API.savePost({
-        //     title: "Test4",
-        //     user: "Test User",
-        //     grader: "",
-        //     instructions: "Test Instructions",
-        //     userAnswer: "Answer Goes Here",
-        //     graderComments: "",
-        //     grade: "ungraded"
-        // })
-        //     .then(postData => {
-        //         console.log(postData.data);
-        //     })
-        //     .catch(err => console.log(err));
-
-        // API.getUserByNameTest("Josh6")
-        //     .then(postData => {
-        //         console.log(postData.data);
-        //     })
-        //     .catch(err => console.log(err));
-
         API.getAllUngradedPosts("ungraded")
             .then(postData => {
                 console.log(postData.data);
-
-                // for (let i = 0; i < postData.data.length; i++) {
-                //     if (postData.data[i].title === "Test3") {
-                //         console.log("This is Test3!!!");
-                //     }
-                //     else{
-                //         console.log("This is Not Test3!");
-                //     }
-                // }
             })
             .catch(err => console.log(err));
     };

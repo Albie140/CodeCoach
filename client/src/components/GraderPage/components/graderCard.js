@@ -1,13 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import "../Grader.css";
 import {
-    Form, FormGroup, Label, Input, Card, Button, CardHeader, CardFooter, CardBody,
+    FormGroup, Label, Input, Card, Button, CardHeader, CardFooter, CardBody,
     CardTitle, CardText
 } from 'reactstrap';
 import API from "../../../utils/API";
 
-// NEED TO PASS PROPS OF LEARNER SUBMITTED WORK
-// FROM GRADERLIST
 
 function GraderCard(props) {
     const [grade, setGrade] = useState("A");
@@ -17,14 +15,6 @@ function GraderCard(props) {
         event.preventDefault();
 
         console.log("Submitted!");
-
-        // console.log("title: " + props.title);
-        // console.log("user: " + props.user);
-        // console.log("grader: " + props.currentLoggedInGraderUserName);
-        // console.log("userLink: " + props.userLink);
-        // console.log("userComments: " + props.userComments);
-        // console.log("graderComments: " + graderComments);
-        // console.log("grade: " + grade);
 
         API.updatePost(props.id, {
             title: props.title,
@@ -43,15 +33,15 @@ function GraderCard(props) {
 
     return (
         <div>
-            <Card className="gradeCardMain">
-                <CardHeader className="gradeCardHead" tag="h3">{props.user}</CardHeader>
+                <Card className="gradeCardMain">
+                    <CardHeader className="gradeCardHead" tag="h3">{props.user}</CardHeader>
 
-                <CardBody className="gradeCardBody">
+                    <CardBody className="gradeCardBody">
 
-                    <CardTitle tag="h5">Lesson: {props.title}</CardTitle>
-                    <CardText>
-                        Learner Comments: {props.userComments}
-                    </CardText>
+                        <CardTitle tag="h5">Lesson: {props.title}</CardTitle>
+                        <CardText>
+                            Learner Comments: {props.userComments}
+                        </CardText>
 
                     <CardText>Github Repo:
                     <a href={props.userLink} target="_blank"> {props.userLink}</a>
@@ -74,10 +64,6 @@ function GraderCard(props) {
                         <Input type="textarea" name="commentforgrader" id="commentforgrader" onChange={e => setGraderComments(e.target.value)}/>
                     </FormGroup>
 
-                    {/* <FormGroup>
-                        <button onClick={submitGrade}> SUBMIT </button>
-                    </FormGroup> */}
-
                 </CardBody>
 
                 <CardFooter className="gradeCardFoot">
@@ -85,10 +71,11 @@ function GraderCard(props) {
 
                         <Button className="gradeThisBtn" onClick={submitGrade}>Grade This!</Button>
 
-                    </CardText>
-                </CardFooter>
+                        </CardText>
+                    </CardFooter>
 
-            </Card>
+                </Card>
+
         </div>
     );
 }
