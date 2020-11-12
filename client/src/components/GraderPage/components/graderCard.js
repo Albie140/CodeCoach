@@ -37,9 +37,10 @@ function GraderCard(props) {
         console.log("Deleted!");
 
         API.removePost(props.id)
-            .then(
+            .then(() => {
+                props.setDeletedId(props.id)
                 props.loadGrading()
-            )
+            })
             .catch(err => console.log(err));
     }
 

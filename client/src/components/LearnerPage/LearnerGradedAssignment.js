@@ -25,6 +25,15 @@ function LearnerGradedAssignment(props) {
           }
         }
 
+        if (gradedAssignments.length == 0){
+          gradedAssignments.push({
+            title: "",
+            grader: "",
+            graderComments: "",
+            grade: ""
+          })
+        }
+
         setGradedInfo(gradedAssignments[gradedAssignments.length - 1])
 
       })

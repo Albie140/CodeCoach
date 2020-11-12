@@ -29,6 +29,8 @@ function LearnerPage(props) {
         var gradedAssignmentsNoDuplicates = [];
         var gradedAssignmentsTitles = [];
 
+        var gpa = 0;
+
         for (let i = 0; i < allData.data.length; i++) {
           if (allData.data[i].grade !== "ungraded") {
 
@@ -47,6 +49,28 @@ function LearnerPage(props) {
         console.log(gradedAssignmentsNoDuplicates);
 
         setNumberOfGradedAssignments(gradedAssignmentsNoDuplicates);
+
+        for (let i = 0; i < gradedAssignmentsNoDuplicates.length; i++){
+          if (gradedAssignmentsNoDuplicates[i].grade === "A"){
+            gpa = gpa + 4;
+          }
+          if (gradedAssignmentsNoDuplicates[i].grade === "B"){
+            gpa = gpa + 3;
+          }
+          if (gradedAssignmentsNoDuplicates[i].grade === "C"){
+            gpa = gpa + 2;
+          }
+          if (gradedAssignmentsNoDuplicates[i].grade === "D"){
+            gpa = gpa + 1;
+          }
+          if (gradedAssignmentsNoDuplicates[i].grade === "F"){
+            gpa = gpa + 0;
+          }
+        }
+
+        gpa = gpa / gradedAssignmentsNoDuplicates.length;
+
+        console.log(gpa);
       })
       .catch(err => console.log(err));
   }, []);
