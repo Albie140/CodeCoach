@@ -26,7 +26,6 @@
 ![screenshot1](./assets/images/screenshot1.png)
 ![screenshot2](./assets/images/screenshot2.png)
 ![screenshot3](./assets/images/screenshot3.png)
-![screenshot4](./assets/images/screenshot4.png)
 ![screenshot4](./assets/images/screenshot5.png)
 ![screenshot4](./assets/images/screenshot6.png)
 
