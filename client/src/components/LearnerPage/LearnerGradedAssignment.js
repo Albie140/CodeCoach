@@ -13,12 +13,20 @@ function LearnerGradedAssignment(props) {
   useEffect(() => {
     API.getAllPostsByUser(props.userName)
       .then(allData => {
-        console.log(`@@@@@@@@@@@@@`)
+        console.log("Getting all posts from user 'LearnerGradedAssignment.js")
         console.log(allData.data)
 
-        if (allData.data[0].grade !== "ungraded") {
-          setGradedInfo(allData.data[0])
+        var gradedAssignments = []
+
+        for (let i = 0; i < allData.data.length; i++){
+          if (allData.data[i].grade !== "ungraded") {
+
+            gradedAssignments.push(allData.data[i])
+          }
         }
+
+        setGradedInfo(gradedAssignments[gradedAssignments.length - 1])
+
       })
       .catch(err => console.log(err));
   }, []);

@@ -5,7 +5,7 @@ import API from "../../../utils/API";
 
 function LearnerInputBox(props) {
     const [assignment, setAssignment] = useState("1-Visual Studio Code & Github");
-    const [link, setLink] = useState("yourprofile.github.com/repolink");
+    const [link, setLink] = useState("");
     const [userComments, setUserComments] = useState("");
 
     function submitAssignment(event) {
@@ -24,7 +24,7 @@ function LearnerInputBox(props) {
                 console.log(postData.data);
                 // getAllPostsAgain();
                 setAssignment("1-Visual Studio Code & Github")
-                setLink("yourprofile.github.com/repolink")
+                setLink("")
                 setUserComments("")
             })
             .catch(err => console.log(err));
