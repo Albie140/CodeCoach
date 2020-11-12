@@ -35,7 +35,10 @@ const LearnerLessonplan = (props) => {
 
           <CardText>Resource to help:</CardText>
 
-          <Button className="lessonRssBtn"><a className="lessonRssLink" href="https://www.w3schools.com/" target="_blank">Click Here!</a></Button>
+          {/* <Button className="lessonRssBtn"> */}
+            <a className="lessonRssLink" href="https://www.w3schools.com/" target="_blank">Click Here!</a>
+            {/* </Button> */}
+          
 
         </Card>
       </Col>
