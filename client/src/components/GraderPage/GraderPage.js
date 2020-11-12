@@ -16,9 +16,7 @@ function GraderPage(props) {
           <br />
           <h6>
             Thank you for helping others learn how to code! Below is a list of some code newbies who need your help! Please be as thorough and as informative & helpful with your comments as you can be!
-        <br /><br />
           </h6>
-
         </div>
 
         <GraderList userName={props.userName} />

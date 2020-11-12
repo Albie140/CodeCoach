@@ -16,6 +16,7 @@ function LearnerGradedAssignment(props) {
         console.log("Getting all posts from user 'LearnerGradedAssignment.js")
         console.log(allData.data)
 
+
         var gradedAssignments = []
 
         for (let i = 0; i < allData.data.length; i++){
@@ -50,8 +51,8 @@ function LearnerGradedAssignment(props) {
       <hr />
       <center><h1 className="gradeOnLearnerDash">{gradedInfo.grade}</h1></center>
       <h4>{gradedInfo.grader} said...</h4>
-      <h4 className="assignComment">"{gradedInfo.graderComments}"
-      <br/></h4>
+      <h5 className="assignComment">"{gradedInfo.graderComments}"
+      <br/></h5>
       </>
     }
       

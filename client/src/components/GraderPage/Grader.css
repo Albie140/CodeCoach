@@ -6,10 +6,10 @@ h1.graderh1 {
     background-color: #6b77e1;
     background-image: linear-gradient(to right top, #e06161, #e06486, #d36fa8, #bc7ec3, #9e8dd4, #7a9ee5, #4cadeb, #00bae6, #00cbd1, #04d6a0, #8cd962, #e4d02e);
     text-align: center;
-    width: 90%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 30px;
-    padding: 10px 5px;
+    padding: 3%;
     color: #e3d02e;
 }
 
@@ -19,13 +19,14 @@ h1.graderh1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     width: 80%;
     margin: 0 auto;
-    margin-top: 10px;
+    margin-top: 5%;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 8%;
+    text-indent: 2%;
 }
 
 .graderListBox {
-    margin-top: 35px;
+    margin-top: 4%;
     font-family: 'Bubblegum Sans', cursive;
 }
 
@@ -35,7 +36,7 @@ h2.gListh1 {
     margin: 0 auto;
     width: 40%;
     border-radius: 10px;
-    padding: 10px;
+    padding: 3%;
     color: #e3d02e;
 }
 
@@ -65,9 +66,12 @@ img.graderIMG {
 }
 
 .gradeCardMain {
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     border: none !important;
     border-radius: 10px !important;
+    margin-top: 0;
+    margin-bottom: 3%;
 }
 
 .gradeCardBody {
@@ -87,4 +91,35 @@ img.graderIMG {
     border-radius: 0 0 10px 10px!important;
 }
 
+div.divForGraderStory {
+    background-color: #6b77e1;
+    margin: 0 auto;
+    padding: 10%;
+    text-indent: 2%;
+    width: 90%;
+    border-radius: 8px;
+}
+
+img.graderStoryIcon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 2%;
+}
+
+.gradeOptionBox {
+    width: 10% !important;
+    padding-left: 2% !important;
+    margin-left: 5% !important;
+}
+
+@media (max-width:400px) { 
+    .gradeOptionBox {
+        width: 30% !important;
+        height: auto !important;
+    }
+    h1, h2 {
+        font-size: 600% !important;
+    }
+} 
 
