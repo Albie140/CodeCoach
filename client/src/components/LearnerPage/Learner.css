@@ -15,8 +15,8 @@ div.learnerGradeDiv {
     margin: 0 auto;
     background-color: #6b77e1;
     border-radius: 20px;
-    padding: 10%;
-    margin-top: 10%;
+    padding: 5%;
+    margin-top: 7%;
 }
 
 h2.learnh2 {
@@ -52,8 +52,11 @@ h1.lessonHeadh1 {
 .LearnerProgBar {
     width: 70%;
     margin: 0 auto;
+    padding: 5%;
     margin-top: 8%;
-    padding-bottom: 10%;
+    margin-bottom: 8%;
+    background-color: #e06161;
+    border-radius: 10px;
 }
 
 .lessonsMainDiv {
@@ -82,6 +85,7 @@ img.learnerIMG {
 
 h2.progBarh2 {
     font-family: 'Bubblegum Sans', cursive;
+    color: #e4d02e;
 }
 
 img.lessonModalIMG {
@@ -176,4 +180,10 @@ div.learnerStory {
     display: block;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media (max-width:400px) {
+    .learnerStoryContainer {
+        font-size: 400% !important;
+    }
 }

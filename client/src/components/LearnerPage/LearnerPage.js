@@ -13,6 +13,8 @@ function LearnerPage(props) {
   });
   const [numberOfGradedAssignments, setNumberOfGradedAssignments] = useState([]);
 
+  const [totalGPA, setTotalGPA] = useState("")
+
   useEffect(() => {
     setLessonInfo({ lessons })
     console.log(lessonInfo);
@@ -71,6 +73,7 @@ function LearnerPage(props) {
         gpa = gpa / gradedAssignmentsNoDuplicates.length;
 
         console.log(gpa);
+        setTotalGPA(gpa)
       })
       .catch(err => console.log(err));
   }, []);
@@ -79,7 +82,7 @@ function LearnerPage(props) {
     <div>
       <div className="container-fluid">
         <h1 className="learnerh1">
-          👋 Hello there, {props.name}!
+        <span role="img" aria-label="wavingEmoji">👋</span> Hello there, {props.name}!
         </h1>
 
         <div className="learnerGradeDiv">
@@ -89,13 +92,15 @@ function LearnerPage(props) {
             userName={props.userName} />
         </div>
         <div className="LearnerProgBar">
-          <h2 className="progBarh2">Your Progress: </h2>
+          <h2 className="progBarh2">Your Progress Stats: </h2>
 
           <ProgressBar userName={props.userName}/>
 
           <h6 style={{ textAlign: "center" }}>
             {numberOfGradedAssignments.length} out of 10 lessons completed!
           </h6>
+          <br/>
+          <h3 style={{ textAlign: "center" }}>Current GPA: {totalGPA}</h3>
 
         </div>
 

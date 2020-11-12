@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import "../Grader.css";
 import {
     FormGroup, Label, Input, Card, Button, CardHeader, CardFooter, CardBody,
@@ -58,7 +58,7 @@ function GraderCard(props) {
                     </CardText>
 
                     <CardText>Learner Github Repo:
-                    <a href={props.userLink} target="_blank"> {props.userLink}</a>
+                    <a href={props.userLink} target="_blank" rel="noopener noreferrer"> {props.userLink}</a>
                     </CardText>
 
                     <FormGroup>
@@ -87,7 +87,7 @@ function GraderCard(props) {
 
                         <Button className="deleteThisBtn" onClick={deleteAssignment}>Delete</Button>
 
-                        <Button className="gradeThisBtn" onClick={submitGrade}>Grade This!</Button>
+                        <Button className="gradeThisBtn" onClick={submitGrade}>Grade This</Button>
 
                     </CardText>
                 </CardFooter>

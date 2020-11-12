@@ -5,10 +5,21 @@
     margin-top: 50px;
     background-color: #769eda;
     color: #e4d02e;
-    width: 300px;
+    width: 35%;
     border-radius: 10px;
     font-family: 'Bubblegum Sans', cursive;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+@media (max-width:700px) {
+    .loginBox {
+        width: 75%;
+    }
+}
+@media (max-width:400px) {
+    .loginBox {
+        font-size: 550% !important;
+    }
 }
 
 .loginBelowPhrase {

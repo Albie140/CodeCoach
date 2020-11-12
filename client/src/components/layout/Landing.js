@@ -14,10 +14,10 @@ class Landing extends Component {
             <i className="fas fa-laptop-code"></i> Code Coach
           </h1>
           <hr />
-          <h5 className="h5style">
+          <h3 className="h5style">
             A place for learners and coders alike. 
             Come see it for yourself!
-          </h5>
+          </h3>
          
         </Jumbotron>
 
