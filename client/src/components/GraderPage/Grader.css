@@ -115,7 +115,7 @@ img.graderStoryIcon {
 
 @media (max-width:400px) { 
     .gradeOptionBox {
-        width: 30% !important;
+        width: 35% !important;
         height: auto !important;
     }
     h1, h2 {

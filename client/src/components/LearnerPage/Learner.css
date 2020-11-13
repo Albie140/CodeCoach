@@ -157,7 +157,7 @@ h1.submitWorkh1 {
     color: black !important;
 }
 
-.gradeOnLearnerDash {
+.gradeOnLearnerDash, .h3totalGPA {
     font-family: 'Bubblegum Sans', cursive;
     color: #e3d02e;
 }
@@ -187,3 +187,4 @@ div.learnerStory {
         font-size: 400% !important;
     }
 }
+

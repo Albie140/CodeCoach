@@ -73,10 +73,17 @@ function LearnerPage(props) {
         gpa = gpa / gradedAssignmentsNoDuplicates.length;
 
         console.log(gpa);
-        setTotalGPA(gpa)
+        if (isNaN(gpa)) {
+          setTotalGPA("Nothing to report yet!")
+        } else {
+          setTotalGPA(gpa)
+        }
+        // setTotalGPA(gpa)
+      
       })
       .catch(err => console.log(err));
   }, []);
+
 
   return (
     <div>
@@ -100,7 +107,7 @@ function LearnerPage(props) {
             {numberOfGradedAssignments.length} out of 10 lessons completed!
           </h6>
           <br/>
-          <h3 style={{ textAlign: "center" }}>Current GPA: {totalGPA}</h3>
+          <h3 className="h3totalGPA" style={{ textAlign: "center" }}>Current GPA: {totalGPA}</h3>
 
         </div>
 
