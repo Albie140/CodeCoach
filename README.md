@@ -1,5 +1,18 @@
 # 👨‍💻 Code Coach
-[CLICK HERE FOR LIVE HEROKU APPLICATION](http://codecoach0.herokuapp.com/)
+HEROKU DEPLOYED APP: [http://codecoach0.herokuapp.com/](http://codecoach0.herokuapp.com/)
+
+## DEMO Log-Ins
+
+Feel free to register a new user for either a grader or a learner!
+
+LEARNER
+  - email: njones@learn.com
+  - password: testingpwd123
+  
+GRADER 
+  - email: tsmith@grade.com
+  - password: graderpwd123
+  
 
 ## Table of Contents
 * [Screenshots](#screenshots)
