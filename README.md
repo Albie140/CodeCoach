@@ -1,5 +1,5 @@
 # 👨‍💻 Code Coach
-[CLICK HERE FOR LIVE HEROKU APPLICATION](http://codecoach0.herokuapp.com/)
+HEROKU DEPLOYED APP: [http://codecoach0.herokuapp.com/](http://codecoach0.herokuapp.com/)
 
 ## DEMO Log-Ins
 
