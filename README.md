@@ -8,6 +8,7 @@ Feel free to register a new user for either a grader or a learner!
 LEARNER
   - email: njones@learn.com
   - password: testingpwd123
+  
 GRADER 
   - email: tsmith@grade.com
   - password: graderpwd123
